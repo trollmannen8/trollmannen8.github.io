@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Zsiráf</title>
 </head>
@@ -11,12 +12,15 @@
 
     <header>
 
-        <nav id="navbar">
+        <nav id="navbar" class="topnav">
+
             <ul>
                 <li><a href="#intro">Zsiráf</a></li>
                 <li><a href="#gallery">Galéria</a></li>
                 <li><a href="#formSection">Csatlakozz!</a></li>
+                <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
             </ul>
+
         </nav>
 
     </header>
@@ -38,86 +42,95 @@
             <h2>Galéria</h2>
             
             <div id="imageContainer">
+
                 <div class="imageBox">
                     <img src="assets/img/zsiraf001.jpg" alt="Ivó zsiráfok" onclick="openModal();currentSlide(1)">
                 </div>
+
                 <div class="imageBox">
                     <img src="assets/img/zsiraf002.jpg" alt="Zsiráfok együtt" onclick="openModal();currentSlide(2)">
                 </div>
+
                 <div class="imageBox">
                     <img src="assets/img/zsiraf003.jpg" alt="Két zsiráf" onclick="openModal();currentSlide(3)">
                 </div>
+
                 <div class="imageBox">
                     <img src="assets/img/zsiraf004.jpg" alt="Zsiráf sétál a szavannán" onclick="openModal();currentSlide(4)">
                 </div>
+                
                 <div class="imageBox">
                     <img src="assets/img/zsiraf005.jpg" alt="Zsiráf a kicsinyével" onclick="openModal();currentSlide(5)">
                 </div>
+
                 <div class="imageBox">
-                <img src="assets/img/zsiraf006.jpg" alt="Zsiráf a bokrok között" onclick="openModal();currentSlide(6)">
+                    <img src="assets/img/zsiraf006.jpg" alt="Zsiráf a bokrok között" onclick="openModal();currentSlide(6)">
                 </div>
+
                 <div class="imageBox">
-                <img src="assets/img/zsiraf007.jpg" alt="Zsiráf oldalról fotózva" onclick="openModal();currentSlide(7)">
+                    <img src="assets/img/zsiraf007.jpg" alt="Zsiráf oldalról fotózva" onclick="openModal();currentSlide(7)">
                 </div>
+
                 <div class="imageBox">
-                <img src="assets/img/zsiraf008.jpg" alt="Zsiráf a naplementében" onclick="openModal();currentSlide(8)">
+                    <img src="assets/img/zsiraf008.jpg" alt="Zsiráf a naplementében" onclick="openModal();currentSlide(8)">
                 </div>
+
             </div>
         
             <div id="myModal" class="modal">
                 <span class="close" onclick="closeModal()">&times;</span>
                 <div class="modalContent">
                 
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">1 / 8</div>
                         <img class="picture" src="assets/img/zsiraf001.jpg" style="width:100%" alt="Ivó zsiráfok">
                         <p>Ivó zsiráfok (fotó: <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
                 
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">2 / 8</div>
                         <img class="picure" src="assets/img/zsiraf002.jpg" style="width:100%" alt="Zsiráfok együtt">
                         <p>Zsiráfok együtt (fotó: <a href="https://unsplash.com/@mariolagr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">MARIOLA GROBELSKA</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">3 / 8</div>
                         <img class="picture" src="assets/img/zsiraf003.jpg" style="width:100%" alt="Két zsiráf">
                         <p>Két zsiráf (fotó: <a href="https://unsplash.com/@jori_muc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Joachim Riegel</a> on <a href="https://unsplash.com/@jori_muc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">4 / 8</div>
                         <img class="picture" src="assets/img/zsiraf004.jpg" style="width:100%" alt="Zsiráf sétál a szavannán">
                         <p>Zsiráf sétál a szavannán (fotó: <a href="https://unsplash.com/@jasonhafso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Jason Hafso</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">5 / 8</div>
                         <img class="picture" src="assets/img/zsiraf005.jpg" style="width:100%" alt="Zsiráf a kicsinyével">
                         <p>Zsiráf a kicsinyével (fotó: <a href="https://unsplash.com/@lh_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Lisa H</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">6 / 8</div>
                         <img class="picture" src="assets/img/zsiraf006.jpg" style="width:100%" alt="Zsiráf a bokrok között">
                         <p>Zsiráf a bokrok között (fotó: <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">7 / 8</div>
                         <img class="picture" src="assets/img/zsiraf007.jpg" style="width:100%" alt="Zsiráf oldalról fotózva">
                         <p>Zsiráf oldalról fotózva (fotó: <a href="https://unsplash.com/@goofffball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Paul Fernandez</a> on <a href="https://unsplash.com/s/photos/giraffes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
                         </p>
                     </div>
             
-                    <div class="mySlides">
+                    <div class="slideShow">
                         <div class="numbertext">8 / 8</div>
                         <img class="picture" src="assets/img/zsiraf008.jpg" style="width:100%" alt="Zsiráf a naplementében">
                         <p>Zsiráf a naplementében (fotó: <a href="https://unsplash.com/@zachpearsonphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">ZACHARY PEARSON</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
@@ -159,9 +172,11 @@
                     <label for="userAge">Életkorod:</label><br>
                     <input type="number" id="userAge" name="userAge" min="18" placeholder="Hány éves vagy?" required><br>
             
-                    <label for="userGender">Nemed:</label><br>
-                    <input type="radio" id="userGender" name="userGender" value="female" required><span class="formText"> Nő</span><br>
-                    <input type="radio" id="userGender" name="userGender" value="male" required><span class="formText"> Férfi</span><br>
+                    <span class="formText">Nemed:</span><br>
+                    <input type="radio" id="userFemale" name="userGender" value="female" required>
+                    <label for="userFemale"> Nő</label><br>
+                    <input type="radio" id="userMale" name="userGender" value="male" required>
+                    <label for="userMale"> Férfi</label><br>
             
                     <label for="freeTime">Hány órát tudsz ránk szánni egy héten?</label><br>
                     <select name="freeTime" id="freeTime" required>
@@ -186,10 +201,22 @@
 
     <footer>
         <p><sup>*</sup> Forrás: <a href="https://hu.wikipedia.org/wiki/Zsir%C3%A1f" target="_blank">Wikipédia</a></p>
-        <p>&copy 2021, Zsiráf</p>
+        <p>&copy 2021, Vizsgamunka</p>
     </footer>
 
-    <script>      
+    <script>
+
+        function menuFunction() {
+            var menu = document.getElementById("navbar");
+            var button = document.getElementById("responsiveButton");
+            if (menu.className === "topnav") {
+            menu.className += " responsive";
+            button.className = "fa fa-close";
+            } else {
+            menu.className = "topnav";
+            button.className = "fa fa-bars";
+            }
+        }    
     
         function openModal() {
             document.getElementById("myModal").style.display = "block";
@@ -212,7 +239,7 @@
       
         function showSlides(n) {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("slideShow");
             if (n > slides.length) {slideIndex = 1}
             if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {

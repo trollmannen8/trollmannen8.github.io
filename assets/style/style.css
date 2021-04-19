@@ -20,11 +20,14 @@ body {
     width: 100%;
     height: 50px;
     background-color: #e76f51;
-    box-shadow: 0 2px 2px darkslategray;
+    z-index: 8;
 }
 
 #navbar ul {
+    background-color: #e76f51;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
@@ -41,6 +44,31 @@ body {
 
 #navbar ul li a:hover {
     text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.hamburger {
+        display: block;
+        float: right;
+    }
+    #navbar ul {
+        flex-direction: column;
+    }
+    .topnav.responsive a {
+        display: block;
+    }
+    .topnav.responsive a.hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 #intro {
@@ -120,11 +148,10 @@ body {
     height: fit-content;
     transition: .2s;
     cursor: pointer;
-    box-shadow: 0 0 10px gray;
 }
 
 .imageBox img:hover{
-    filter: brightness(110%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: .2s;
 }
 
@@ -153,38 +180,44 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1;
-    padding-top: 50px;
+    z-index: 10;
     width: 100%;
     height: 100%;
     background-color: rgba(233,196,106, 0.7);
     backdrop-filter: blur(3px);
 }
 
-.mySlides {
+.slideShow {
     margin: 0 auto;
     width: 60%;
     height: auto;
 }
 
+.modalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 @media only screen and (max-width: 1200px) {
-    .mySlides {
+    .slideShow {
         width: 80%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .mySlides {
+    .slideShow {
         width: 90%;
     }
 }
 
-.mySlides p a {
+.slideShow p a {
     text-decoration: none;
     color: black;
 }
 
-.mySlides p a:hover {
+.slideShow p a:hover {
     text-decoration: underline;
 }
 
@@ -207,29 +240,33 @@ body {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     color: black;
     font-size: 2em;
-    padding: 25px;
 }
 
 .next {
-    right: 0;
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
 }
 
 .prev:hover, .next:hover {
     color: darkslategray;
 }
 
-.mySlides p {
+.slideShow img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.slideShow p {
     font-size: 1.2em;
     color: black;
     text-align: center;
 }
 
-.mySlides img {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
 
 .numbertext {
     font-size: 1.2em;
