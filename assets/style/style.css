@@ -288,6 +288,12 @@ body {
     text-shadow: 0 0 10px gray;
 }
 
+@media only screen and (max-width: 800px) {
+    #formSection h2 {
+        font-size: 3em;
+    }
+}
+
 #formSection p {
     font-size: 2em;
     color: white;
