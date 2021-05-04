@@ -13,17 +13,31 @@
     <p id="description">Converts Arabic numbers to Roman numerals</p>
 
     <div id="content">
-        <label for="arabic">Arabic number:</label>
-        <input type="number" name="arabic" id="arabic" min="1" max="3999">
-        <button onclick="calculate()">Calculate</button>
-        <p>Roman number: </p>
+        <label for="arabic">Enter an Arabic number:</label>
+        <input type="number" name="arabic" id="arabic">
+        <button onclick="calculate()">Convert</button>
+        <span>Roman number:</span>
         <p id="result"></p>
     </div>
+
+    <footer>
+
+        <p>Background picture: <a href="https://unsplash.com/@benceboros?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">BENCE BOROS</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+        </p>
+        <p>&copy; 2021, Takács Dániel</p>
+
+    </footer>
     
     <script>
 
         function convertToRoman(num) {
             let result = "";
+            if (num == 0) {
+                result = "NULLA";
+            }
+            if (num > 5000) {
+                return "That's too big!";
+            }
             while (num >= 1000) {
                 result += "M";
                 num -= 1000;

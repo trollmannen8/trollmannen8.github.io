@@ -14,15 +14,14 @@ h1 {
 
 #description {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
     color: white;
     text-shadow: 0 0 5px black;
 }
 
 #content {
-    width: 30vw;
-    min-height: 50vh;
+    width: 25vw;
     margin: 50px auto;
     background-color: rgba(32, 32, 32, 0.5);
     backdrop-filter: blur(3px);
@@ -35,13 +34,24 @@ h1 {
     font-size: 1.2em;
 }
 
-#content p,label {
-    margin: 25px;
+#content p,label,span {
+    font-size: 1.2em;
+}
+
+label {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+span {
+    margin-bottom: 10px;
 }
 
 input {
     margin-bottom: 25px;
-    height: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.5em;
     width: 60%;
     border: none;
     border-radius: 5px;
@@ -55,19 +65,56 @@ input:focus {
 button {
     border: none;
     border-radius: 5px;
-    height: 1.5em;
+    height: 2em;
     width: 30%;
+    font-size: 1em;
+    margin-bottom: 50px;
 }
 
+button:hover {
+    background-color: lightblue;
+}
+
+button:active {
+    transform: scale(.97);
+}
+ 
 #result {
     margin-top: 0;
-    height: 2em;
-    line-height: 2em;
+    height: 1.5em;
+    line-height: 1.5em;
     background-color: white;
     color: black;
     width: 60%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     border: thin solid white;
     border-radius: 5px;
+}
+
+footer {
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(32, 32, 32, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    margin: 0 20px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
