@@ -3,6 +3,7 @@ body {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
 }
 
 #content {
-    width: 25vw;
+    width: 25%;
     margin: 50px auto;
     background-color: rgba(32, 32, 32, 0.5);
     backdrop-filter: blur(3px);
@@ -32,6 +33,18 @@ h1 {
     align-items: center;
     color: white;
     font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1400px){
+    #content {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #content {
+        width: 70%;
+    }
 }
 
 #content p,label,span {
@@ -81,6 +94,7 @@ button:active {
  
 #result {
     margin-top: 0;
+    margin-bottom: 50px;
     height: 1.5em;
     line-height: 1.5em;
     background-color: white;
