@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Roman Numeral Converter</title>
+</head>
+<body>
+
+    <h1>Roman Numeral Converter</h1>
+    <p id="description">Converts Arabic numbers to Roman numerals</p>
+
+    <div id="content">
+        <label for="arabic">Arabic number:</label>
+        <input type="number" name="arabic" id="arabic" min="1" max="3999">
+        <button onclick="calculate()">Calculate</button>
+        <p>Roman number: </p>
+        <p id="result"></p>
+    </div>
+    
+    <script>
+
+        function convertToRoman(num) {
+            let result = "";
+            while (num >= 1000) {
+                result += "M";
+                num -= 1000;
+            }
+            if (num >= 900) {
+                result += "CM";
+                num -= 900;
+            }
+            if (num >= 500) {
+                result += "D";
+                num -= 500;
+            }
+            if (num >= 400) {
+                result += "CD";
+                num -= 400;
+            }
+            while (num >= 100) {
+                result += "C";
+                num -= 100;
+            }
+            if (num >= 90) {
+                result += "XC";
+                num -= 90;
+            }
+            if (num >= 50) {
+                result += "L";
+                num -= 50;
+            }
+            if (num >= 40) {
+                result += "XL";
+                num -= 40;
+            }
+            while (num >= 10) {
+                result += "X";
+                num -= 10;
+            }
+            if (num >= 9) {
+                result += "IX";
+                num -= 9;
+            }
+            if (num >= 5) {
+                result += "V";
+                num -= 5;
+            }
+            if (num >= 4) {
+                result += "IV";
+                num -= 4;
+            }
+            while (num >= 1) {
+                result += "I";
+                num -= 1;
+            }
+            return result;
+        }
+
+        function calculate(){
+        var arabicNumber = document.getElementById("arabic").value;
+        var romanNumber = convertToRoman(arabicNumber);
+        document.getElementById("result").innerHTML = romanNumber;
+        }
+
+    </script>
+
+</body>
+</html>
