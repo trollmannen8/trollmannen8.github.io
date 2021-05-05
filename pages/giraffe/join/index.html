@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Zsiráf - Csatlakozz!</title>
+</head>
+<body>
+
+    <header>
+
+        <nav id="navbar" class="topnav">
+
+            <ul>
+                <li><a href="../index.html">Főoldal</a></li>
+                <li><a href="../gallery/index.html">Galéria</a></li>
+                <li><a href="index.html">Csatlakozz!</a></li>
+                <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="formSection">
+    
+            <h2>Csatlakozz!</h2>
+    
+            <p>A zsiráf veszélyeztetett faj. Ha szeretnél segíteni a megmentésében, regisztrálj!</p>
+    
+            <form action="kuldes.php" method="POST">
+        
+                <fieldset>
+            
+                    <legend>Regisztrációs űrlap</legend>
+            
+                    <label for="fullName">Teljes neved:</label><br>
+                    <input type="text" name="fullName" id="fullName" placeholder="Írd be a neved!" required><br>
+            
+                    <label for="userName">Felhasználóneved:</label><br>
+                    <input type="text" name="userName" id="userName" placeholder="Írd be a felhasználóneved!" required><br>
+            
+                    <label for="emailAddress">Emailcímed:</label><br>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Írd be az emailcímed!" required><br>
+            
+                    <label for="userPass">Jelszavad:</label><br>
+                    <input type="password" id="userPass" name="userPass" placeholder="Írd be a jelszavad!" required><br>
+            
+                    <label for="userAge">Életkorod:</label><br>
+                    <input type="number" id="userAge" name="userAge" min="18" placeholder="Hány éves vagy?" required><br>
+            
+                    <span class="formText">Nemed:</span><br>
+                    <input type="radio" id="userFemale" name="userGender" value="female" required>
+                    <label for="userFemale"> Nő</label><br>
+                    <input type="radio" id="userMale" name="userGender" value="male" required>
+                    <label for="userMale"> Férfi</label><br>
+            
+                    <label for="freeTime">Hány órát tudsz ránk szánni egy héten?</label><br>
+                    <select name="freeTime" id="freeTime" required>
+                        <option></option>
+                        <option value="max4">Maximum 4 órát</option>
+                        <option value="max8">Maximum 8 órát</option>
+                        <option value="max12">Maximum 12 órát</option>
+                    </select><br>
+            
+                    <label for="newsLetter">Szeretnél feliratkozni hírlevelünkre?</label><br>
+                    <input type="checkbox" id="newsLetter" name="newsLetter" value="yes"><span class="formText"> Igen</span><br>
+            
+                    <input type="submit">
+            
+                </fieldset>
+        
+            </form>
+    
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="#">Felhasználási feltétlek</a></p>
+        <p>&copy; 2021, Vizsgamunka</p>
+    </footer>
+
+    <script>
+
+        function menuFunction() {
+            var menu = document.getElementById("navbar");
+            var button = document.getElementById("responsiveButton");
+            if (menu.className === "topnav") {
+            menu.className += " responsive";
+            button.className = "fa fa-close";
+            } else {
+            menu.className = "topnav";
+            button.className = "fa fa-bars";
+            }
+        }    
+    
+    </script>
+
+</body>
+</html>

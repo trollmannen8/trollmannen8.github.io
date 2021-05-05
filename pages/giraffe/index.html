@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Zsiráf</title>
+</head>
+<body>
+
+    <header>
+
+        <nav id="navbar" class="topnav">
+
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="gallery/index.html">Galéria</a></li>
+                <li><a href="join/index.html">Csatlakozz!</a></li>
+                <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section id="mainPage">
+
+            <h1>Zsiráf</h1>
+            
+            <p>A zsiráf (Giraffa camelopardalis) az emlősök (Mammalia) osztályának párosujjú patások (Artiodactyla) rendjébe, ezen belül a zsiráffélék (Giraffidae) családjába tartozó faj.</p>
+
+            <p>A legmagasabb és leghosszabb nyakú szárazföldi élőlény. A szavannák lakója az ókortól kedvelt attrakció volt – Rómában először Julius Caesar mutatott be zsiráfokat az amfiteátrumi játékokon – és ma is népszerű szafarikon és állatkertekben. Neve arab eredetű, olasz közvetítéssel jutott el a magyarba a késő középkorban. A tudományos nevében szereplő camelopardalis a faj addig használt nevére, a görög kamélopardaliszra („tevepárduc”) utal. Sztephanosz Büzantioszt, aki az első ókori híradást adta a különös állatról, a zsiráf a magassága a tevéére emlékeztette, bőrének mintázata pedig a párducéra. A magyar nyelvújító mozgalom lázában tízezer új szót alkottak, így a zsiráf neve is sorra került. A nyakatekert „foltos nyakorján” név azonban nem gyökeresedett meg.</p>
+
+            <figure>
+                <img src="assets/img/fooldalzsiraf001.jpg" alt="">
+                <figcaption>Fotó: <a href="https://unsplash.com/@eelco_bohtlingk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Eelco Böhtlingk</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a></figcaption>
+            </figure>
+
+            <p>A zsiráf a világ legmagasabb állata: a bikák szarvcsúcsa akár 5,7 méter magasan is lehet, marmagasságuk eléri 3,3 métert. Mindez a rendkívül hosszú (2,4 méteres), de a többi emlőshöz hasonlóan csupán 7 csigolyából álló nyakának és hosszú lábainak köszönhető. Fara látványosan alacsonyabb a marjánál; a vérszívók elleni legyezőként használt, fekete pamacsban végződő farka 76–101 centiméteres. Nyelve is rendkívül hosszú, mintegy 45 cm: vele a zsiráf ügyesen ragadja meg és tépi le a magas falatokat.</p>
+
+            <p>A nemek színezete egyforma, de a tehenek körülbelül 0,7–1 méterrel kisebbek. A bikák tömege elérheti az 1930 kilogrammot, a nőstények legfeljebb 1180 kilogrammosak. Az újszülött zsiráf 2 méter magas, tömege pedig 50–55 kilogrammos.</p>
+
+            <figure>
+                <img src="assets/img/fooldalzsiraf002.jpg" alt="">
+                <figcaption>Fotó: <a href="https://unsplash.com/@wade_lambert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Wade Lambert</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+                </figcaption>
+            </figure>
+
+            <p>Minden zsiráf foltos, de a szőrzet színezete, a foltok méretei és kontúrjai alfajonként, a mintázat pedig egyedenként változó. Az alapszín lehet homokszínű, világosbarna vagy sárgás, a foltok a sárgától a gesztenyevörösig, illetve a szabálytalantól a szögletesig változhatnak.</p>
+
+            <p>A zsiráfszarvak a koponya bőrrel burkolt csontkinövései. Számuk alapvetően kettő, de a homlokrész dudorján nőhet egy, az eredeti szarvak mögött pedig egy újabb pár, kisebb szarv. A több szarv az idős bikák sajátossága.</p>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>A szöveg forrása a <a href="https://hu.wikipedia.org/wiki/Zsir%C3%A1f" target="_blank">Wikipédia</a></p>
+        <p>&copy; 2021, Vizsgamunka</p>
+    </footer>
+
+    <script>
+
+        function menuFunction() {
+            var menu = document.getElementById("navbar");
+            var button = document.getElementById("responsiveButton");
+            if (menu.className === "topnav") {
+            menu.className += " responsive";
+            button.className = "fa fa-close";
+            } else {
+            menu.className = "topnav";
+            button.className = "fa fa-bars";
+            }
+        }    
+    
+    </script>
+
+</body>
+</html>
