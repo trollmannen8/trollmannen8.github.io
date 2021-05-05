@@ -95,7 +95,7 @@ button:active {
 #result {
     margin-top: 0;
     margin-bottom: 50px;
-    height: 1.5em;
+    min-height: 1.5em;
     line-height: 1.5em;
     background-color: white;
     color: black;

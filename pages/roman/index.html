@@ -13,10 +13,10 @@
     <p id="description">Converts Arabic numbers to Roman numerals</p>
 
     <div id="content">
-        <label for="arabic">Enter an Arabic number (0-5000):</label>
+        <label for="arabic">Enter an Arabic number (1 to 3999):</label>
         <input type="number" name="arabic" id="arabic">
         <button onclick="calculate()">Convert</button>
-        <span>Roman number:</span>
+        <span>Roman numerals:</span>
         <p id="result"></p>
     </div>
 
@@ -33,10 +33,16 @@
         function convertToRoman(num) {
             let result = "";
             if (num == 0) {
-                result = "NULLA";
+                return "NULLA";
             }
-            if (num > 5000) {
+            if (num > 3999) {
                 return "That's too big!";
+            }
+            if (num < 0) {
+                return "There are no negative Roman numerals!";
+            }
+            if (num - Math.floor(num) != 0) {
+                return "Only whole numbers, please!";
             }
             while (num >= 1000) {
                 result += "M";
