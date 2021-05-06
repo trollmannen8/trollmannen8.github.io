@@ -15,7 +15,7 @@
     <div id="content">
         <label for="arabic">Enter an Arabic number (1 to 3999):</label>
         <input type="number" name="arabic" id="arabic">
-        <button onclick="calculate()">Convert</button>
+        <button id="button" onclick="calculate()">Convert</button>
         <span>Roman numerals:</span>
         <p id="result"></p>
     </div>
@@ -98,6 +98,13 @@
             }
             return result;
         }
+
+        document.getElementById("arabic").addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("button").click();
+          }
+        });
 
         function calculate(){
         var arabicNumber = document.getElementById("arabic").value;
