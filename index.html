@@ -11,7 +11,7 @@
 </head>
 <body data-spy="scroll" data-target="#navbar-id">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="navbar-id">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow" id="navbar-id">
       <a class="navbar-brand" href="#welcome">Kezdőlap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,10 +32,11 @@
     </nav>
 
     <div class="container-fluid min-vh-100 d-flex align-items-center" id="welcome">
-      <div class="container">
+      <div class="container shadow mb-5 rounded" id="welcome-content">
         <h1>Üdvözöllek az oldalamon!</h1>
         <p>Takács Dániel vagyok.</p>
         <p>Webfejlesztéssel foglalkozom, egyelőre frontend vonalon.</p>
+        <p>Jártas vagyok ezekben a technológiákban: HTML, CSS, JavaScript, Bootstrap.</p>
         <a href="#projects" class="btn btn-primary" id="welcome-link">Tudj meg többet!</a>
       </div>
     </div>
@@ -103,8 +104,8 @@
             </div>
       </div>
 
-      <div class="container-fluid" id="contact">
-        <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="container-fluid min-vh-100 d-flex align-items-center" id="contact">
+        <div class="container d-flex flex-column justify-content-center align-items-center shadow mb-5 rounded" id="contact-content">
           <h2>Elérhetőségek:</h2>
           <a href="https://github.com/trollmannen8" target="_blank"><i class="fa fa-github"></i> Github</a>
           <a href="https://twitter.com/trollmannen8" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>

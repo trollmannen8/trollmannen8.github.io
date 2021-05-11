@@ -11,7 +11,13 @@ body {
 }
 
 #welcome {
-    background-color: #F4F1BB !important;
+    background-color: #5CA4A9 !important;
+}
+
+#welcome-content {
+    padding: 50px;
+    border-radius: 5px;
+    background-color: #F4F1BB;
 }
 
 h1 {
@@ -24,13 +30,11 @@ h1 {
     font-size: 2em;
     margin: 0;
     color: darkslategray;
-    text-indent: 50px;
 }
 
 #welcome-link {
     font-size: 1.5em;
     margin-top: 10px;
-    margin-left: 50px;
 }
 
 
@@ -50,7 +54,13 @@ h1 {
 }
 
 #contact {
+    background-color: #5CA4A9;
+}
+
+#contact-content {
     background-color: #F4F1BB;
+    padding: 50px;
+    border-radius: 5px;
 }
 
 #contact h2 {
