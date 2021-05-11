@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Portfólió</title>
+</head>
+
+<body>
+    <header>
+        <h1>Takács Dániel</h1>
+        <h2>Portfólió</h2>
+    </header>
+    <div class="row">
+        <div class="column">
+            <img src="assets/img/15.jpg" alt="Noémi" onclick="openModal();currentSlide(1)">
+            <img src="assets/img/12.jpg" alt="Zsuzsanna" onclick="openModal();currentSlide(4)">
+            <img src="assets/img/09.jpg" alt="Linda" onclick="openModal();currentSlide(7)">
+            <img src="assets/img/06.jpg" alt="Nikol" onclick="openModal();currentSlide(10)">
+            <img src="assets/img/03.jpg" alt="Georgina" onclick="openModal();currentSlide(13)">
+        </div>
+        <div class="column">
+            <img src="assets/img/14.jpg" alt="PurplePastelChalk" onclick="openModal();currentSlide(2)">
+            <img src="assets/img/11.jpg" alt="Luna" onclick="openModal();currentSlide(5)">
+            <img src="assets/img/08.jpg" alt="Bettina" onclick="openModal();currentSlide(8)">
+            <img src="assets/img/05.jpg" alt="Ágota" onclick="openModal();currentSlide(11)">
+            <img src="assets/img/02.jpg" alt="Shayola Artwork" onclick="openModal();currentSlide(14)">
+        </div>
+        <div class="column">
+            <img src="assets/img/13.jpg" alt="Lili" onclick="openModal();currentSlide(3)">
+            <img src="assets/img/10.jpg" alt="Csilla" onclick="openModal();currentSlide(6)">
+            <img src="assets/img/07.jpg" alt="Emese" onclick="openModal();currentSlide(9)">
+            <img src="assets/img/04.jpg" alt="Csilla" onclick="openModal();currentSlide(12)">
+            <img src="assets/img/01.jpg" alt="Cerebro Kriszti" onclick="openModal();currentSlide(15)">
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <img src="assets/img/15.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Noémi" title="Noémi">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/14.jpg" style="max-height: 95vh; max-width: 95vw;" alt="PurplePastelChalk" title="PurplePastelChalk">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/13.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Lili" title="Lili">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/12.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Zsuzsanna" title="Zsuzsanna">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/11.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Luna" title="Luna">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/10.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Csilla" title="Csilla">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/09.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Linda" title="Linda">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/08.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Bettina" title="Bettina">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/07.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Emese" title="Emese">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/06.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Nikol" title="Nikol">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/05.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Ágota" title="Ágota">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/04.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Csilla" title="Csilla">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/03.jpg" style="max-height: 95vh; max-width: 95vw;"alt="Georgina" title="Georgina">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/02.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Shayola Artwork" title="Shayola Artwork">
+            </div>
+            <div class="mySlides">
+                <img src="assets/img/01.jpg" style="max-height: 95vh; max-width: 95vw;" alt="Cerebro Kriszti" title="Cerebro Kriszti">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a class="favicon" href="https://www.flickr.com/photos/135092434@N08/" title="Flickr" target="_blank">
+                <i class="fa fa-flickr"></i>
+            </a>
+            <a class="favicon" href="https://500px.com/p/trollmannen8" title="500px" target="_blank">
+                <i class="fa fa-500px"></i>
+            </a>
+            <a class="favicon" href="https://www.instagram.com/trollmannen8" title="Instagram" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </nav>
+    </footer>
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
