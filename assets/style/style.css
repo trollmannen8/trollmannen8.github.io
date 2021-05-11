@@ -10,20 +10,25 @@ body {
     background-color: #ED6A5A !important;
 }
 
+.nav-link {
+    font-size: 1.2em;
+}
+
 #welcome {
-    background-color: #5CA4A9 !important;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #welcome-content {
     padding: 100px;
     border-radius: 5px;
-    background-color: #F4F1BB;
+    background-color: rgba(240, 240, 240, 0.7);
 }
 
 h1 {
     color: #ED6A5A;
     font-size: 4em;
-    font-style: italic;
 }
 
 #welcome p {
@@ -54,11 +59,18 @@ h1 {
 }
 
 #contact {
-    background-color: #5CA4A9;
+    background-image: url("../img/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#effect {
+    background-color: rgba(240, 240, 240, 0.7);
+    min-width: 100% !important;
 }
 
 #contact-content {
-    background-color: #F4F1BB;
+    background-color: rgba(240, 240, 240, 0.7);
     padding: 100px;
     border-radius: 5px;
 }
