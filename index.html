@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <title>Értelmetlen, random weboldalak</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Takács Dániel - Webfejlesztő</title>
 </head>
 <body>
 
-    <div class="container-fluid bg-primary text-light">
-      <h1 class="text-center p-3">Értelmetlen, random weboldalak</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="#welcome">Kezdőlap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Rólam</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Munkáim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elérhetőségek</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid min-vh-100 bg-dark text-light" id="welcome">
+      <h1>Takács Dániel vagyok</h1>
+      <p>Üdvözöllek az oldalamon!</p>
     </div>
 
-    <div class="container min-vh-100">
+    <div class="container min-vh-100" id="projects">
+
+      <h2 class="text-center p-3">Munkáim</h2>
 
         <div class="row pt-5">
             <div class="col-xl-3 col-md-6 col d-flex justify-content-center">

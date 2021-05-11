@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#welcome,#projects {
+    padding-top: 100px !important;
+}
