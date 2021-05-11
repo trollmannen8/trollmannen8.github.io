@@ -18,6 +18,7 @@ body {
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #welcome-content {
@@ -62,6 +63,7 @@ h1 {
     background-image: url("../img/contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 #effect {
