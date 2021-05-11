@@ -4,252 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <title>Zsiráf</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Értelmetlen, random weboldalak</title>
 </head>
 <body>
 
-    <header>
+    <div class="container-fluid bg-primary text-light">
+      <h1 class="text-center p-3">Értelmetlen, random weboldalak</h1>
+    </div>
 
-        <nav id="navbar" class="topnav">
+    <div class="container min-vh-100">
 
-            <ul>
-                <li><a href="#intro">Zsiráf</a></li>
-                <li><a href="#gallery">Galéria</a></li>
-                <li><a href="#formSection">Csatlakozz!</a></li>
-                <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <main>
-        
-        <section id="intro">
-
-            <h1>Zsiráf</h1>
-            
-            <p>A zsiráf (Giraffa camelopardalis) az emlősök (Mammalia) osztályának párosujjú patások (Artiodactyla) rendjébe, ezen belül a zsiráffélék (Giraffidae) családjába tartozó faj.</p>
-            
-            <p>A legmagasabb és leghosszabb nyakú szárazföldi élőlény. A szavannák lakója az ókortól kedvelt attrakció volt – Rómában először Julius Caesar mutatott be zsiráfokat az amfiteátrumi játékokon – és ma is népszerű szafarikon és állatkertekben. Neve arab eredetű, olasz közvetítéssel jutott el a magyarba a késő középkorban. A tudományos nevében szereplő camelopardalis a faj addig használt nevére, a görög kamélopardaliszra („tevepárduc”) utal. Sztephanosz Büzantioszt, aki az első ókori híradást adta a különös állatról, a zsiráf a magassága a tevéére emlékeztette, bőrének mintázata pedig a párducéra. A magyar nyelvújító mozgalom lázában tízezer új szót alkottak, így a zsiráf neve is sorra került. A nyakatekert „foltos nyakorján” név azonban nem gyökeresedett meg. <sup>*</sup></p>
-            
-        </section>
-        
-        <section id="gallery">
-            
-            <h2>Galéria</h2>
-            
-            <div id="imageContainer">
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf001.jpg" alt="Ivó zsiráfok" onclick="openModal();currentSlide(1)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf002.jpg" alt="Zsiráfok együtt" onclick="openModal();currentSlide(2)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf003.jpg" alt="Két zsiráf" onclick="openModal();currentSlide(3)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf004.jpg" alt="Zsiráf sétál a szavannán" onclick="openModal();currentSlide(4)">
-                </div>
-                
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf005.jpg" alt="Zsiráf a kicsinyével" onclick="openModal();currentSlide(5)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf006.jpg" alt="Zsiráf a bokrok között" onclick="openModal();currentSlide(6)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf007.jpg" alt="Zsiráf oldalról fotózva" onclick="openModal();currentSlide(7)">
-                </div>
-
-                <div class="imageBox">
-                    <img src="assets/img/zsiraf008.jpg" alt="Zsiráf a naplementében" onclick="openModal();currentSlide(8)">
-                </div>
-
+        <div class="row pt-5">
+            <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="assets/img/img01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Zsiráf</h5>
+                      <p class="card-text">Egyszerű, zsiráfokról szóló oldal, galérával és űrlappal.</p>
+                      <a href="https://trollmannen8.github.io/pages/giraffe/" class="btn btn-primary" target="_blank">Megnézem</a>
+                    </div>
+                  </div>
             </div>
-        
-            <div id="myModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="modalContent">
-                
-                    <div class="slideShow">
-                        <div class="numbertext">1 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf001.jpg" style="width:100%" alt="Ivó zsiráfok">
-                        <p>Ivó zsiráfok (fotó: <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
+            <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="assets/img/img02.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Fotós portfólió</h5>
+                      <p class="card-text">Ez a saját fotós portfólióm.</p>
+                      <a href="https://trollmannen8.github.io/pages/photo/" class="btn btn-primary" target="_blank">Megnézem</a>
                     </div>
-                
-                    <div class="slideShow">
-                        <div class="numbertext">2 / 8</div>
-                        <img class="picure" src="assets/img/zsiraf002.jpg" style="width:100%" alt="Zsiráfok együtt">
-                        <p>Zsiráfok együtt (fotó: <a href="https://unsplash.com/@mariolagr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">MARIOLA GROBELSKA</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">3 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf003.jpg" style="width:100%" alt="Két zsiráf">
-                        <p>Két zsiráf (fotó: <a href="https://unsplash.com/@jori_muc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Joachim Riegel</a> on <a href="https://unsplash.com/@jori_muc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">4 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf004.jpg" style="width:100%" alt="Zsiráf sétál a szavannán">
-                        <p>Zsiráf sétál a szavannán (fotó: <a href="https://unsplash.com/@jasonhafso?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Jason Hafso</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">5 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf005.jpg" style="width:100%" alt="Zsiráf a kicsinyével">
-                        <p>Zsiráf a kicsinyével (fotó: <a href="https://unsplash.com/@lh_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Lisa H</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">6 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf006.jpg" style="width:100%" alt="Zsiráf a bokrok között">
-                        <p>Zsiráf a bokrok között (fotó: <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Wolfgang Hasselmann</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">7 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf007.jpg" style="width:100%" alt="Zsiráf oldalról fotózva">
-                        <p>Zsiráf oldalról fotózva (fotó: <a href="https://unsplash.com/@goofffball?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Paul Fernandez</a> on <a href="https://unsplash.com/s/photos/giraffes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <div class="slideShow">
-                        <div class="numbertext">8 / 8</div>
-                        <img class="picture" src="assets/img/zsiraf008.jpg" style="width:100%" alt="Zsiráf a naplementében">
-                        <p>Zsiráf a naplementében (fotó: <a href="https://unsplash.com/@zachpearsonphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">ZACHARY PEARSON</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>)
-                        </p>
-                    </div>
-            
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-                </div>
+                  </div>
             </div>
-    
-        </section>
-
-        <section id="formSection">
-    
-            <h2>Csatlakozz!</h2>
-    
-            <p>A zsiráf veszélyeztetett faj. Ha szeretnél segíteni a megmentésében, regisztrálj!</p>
-    
-            <form action="kuldes.php" method="POST">
+            <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="assets/img/img03.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Arab-római szám átváltó</h5>
+                      <p class="card-text">Arab számokat római számokra vált át. A szabályos jelölést használja.</p>
+                      <a href="https://trollmannen8.github.io/pages/roman/" class="btn btn-primary" target="_blank">Megnézem</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
+                <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <img src="assets/img/img04.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Színváltó</h5>
+                      <p class="card-text">Gombnyomásra véletlen színűre változtatja a hátteret, és kiírja a szín hexadecimális kódját.</p>
+                      <a href="https://trollmannen8.github.io/pages/colorflipper/" class="btn btn-primary" target="_blank">Megnézem</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
+              <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                  <img src="assets/img/img05.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Számláló</h5>
+                    <p class="card-text">Növelhetjük, csökkenthetjük illetve nullázhatjuk a számot. A szám színe értéktől függően változik.</p>
+                    <a href="https://trollmannen8.github.io/pages/counter/" class="btn btn-primary" target="_blank">Megnézem</a>
+                  </div>
+                </div>
+          </div>
+        </div>
         
-                <fieldset>
-            
-                    <legend>Regisztrációs űrlap</legend>
-            
-                    <label for="fullName">Teljes neved:</label><br>
-                    <input type="text" name="fullName" id="fullName" placeholder="Írd be a neved!" required><br>
-            
-                    <label for="userName">Felhasználóneved:</label><br>
-                    <input type="text" name="userName" id="userName" placeholder="Írd be a felhasználóneved!" required><br>
-            
-                    <label for="emailAddress">Emailcímed:</label><br>
-                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Írd be az emailcímed!" required><br>
-            
-                    <label for="userPass">Jelszavad:</label><br>
-                    <input type="password" id="userPass" name="userPass" placeholder="Írd be a jelszavad!" required><br>
-            
-                    <label for="userAge">Életkorod:</label><br>
-                    <input type="number" id="userAge" name="userAge" min="18" placeholder="Hány éves vagy?" required><br>
-            
-                    <span class="formText">Nemed:</span><br>
-                    <input type="radio" id="userFemale" name="userGender" value="female" required>
-                    <label for="userFemale"> Nő</label><br>
-                    <input type="radio" id="userMale" name="userGender" value="male" required>
-                    <label for="userMale"> Férfi</label><br>
-            
-                    <label for="freeTime">Hány órát tudsz ránk szánni egy héten?</label><br>
-                    <select name="freeTime" id="freeTime" required>
-                        <option></option>
-                        <option value="max4">Maximum 4 órát</option>
-                        <option value="max8">Maximum 8 órát</option>
-                        <option value="max12">Maximum 12 órát</option>
-                    </select><br>
-            
-                    <label for="newsLetter">Szeretnél feliratkozni hírlevelünkre?</label><br>
-                    <input type="checkbox" id="newsLetter" name="newsLetter" value="yes"><span class="formText"> Igen</span><br>
-            
-                    <input type="submit">
-            
-                </fieldset>
-        
-            </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
-        </section>
-
-    </main>
-
-    <footer>
-        <p><sup>*</sup> Forrás: <a href="https://hu.wikipedia.org/wiki/Zsir%C3%A1f" target="_blank">Wikipédia</a></p>
-        <p>&copy; 2021, Vizsgamunka</p>
-    </footer>
-
-    <script>
-
-        function menuFunction() {
-            var menu = document.getElementById("navbar");
-            var button = document.getElementById("responsiveButton");
-            if (menu.className === "topnav") {
-            menu.className += " responsive";
-            button.className = "fa fa-close";
-            } else {
-            menu.className = "topnav";
-            button.className = "fa fa-bars";
-            }
-        }    
-    
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-      
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-      
-        var slideIndex = 1;
-        showSlides(slideIndex);
-      
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-      
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-      
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("slideShow");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slides[slideIndex-1].style.display = "block";
-        }
-    
-    </script>
-
 </body>
 </html>
