@@ -2,6 +2,69 @@ html {
     scroll-behavior: smooth;
 }
 
-#welcome,#projects {
+body {
+    position: relative;
+}
+
+.navbar {
+    background-color: #ED6A5A !important;
+}
+
+#welcome {
+    background-color: #F4F1BB !important;
+}
+
+h1 {
+    color: #ED6A5A;
+    font-size: 4em;
+    font-style: italic;
+}
+
+#welcome p {
+    font-size: 2em;
+    margin: 0;
+    color: darkslategray;
+    text-indent: 50px;
+}
+
+#welcome-link {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+
+#projects {
+    background-color: #E6EBE0;
     padding-top: 100px !important;
+}
+
+#projects h2 {
+    font-size: 3em;
+}
+
+.btn-primary {
+    background-color: #ED6A5A !important;
+    border: #F4F1BB !important;
+}
+
+#contact {
+    background-color: #F4F1BB;
+}
+
+#contact h2 {
+    font-size: 3em;
+    color: #ED6A5A;
+}
+
+#contact a {
+    font-size: 1.5em;
+    margin: 5px;
+    color: darkslategray;
+}
+
+#contact a:hover {
+    color: gray;
+    text-decoration: none;
 }
