@@ -15,7 +15,7 @@ body {
 }
 
 #welcome-content {
-    padding: 50px;
+    padding: 100px;
     border-radius: 5px;
     background-color: #F4F1BB;
 }
@@ -59,7 +59,7 @@ h1 {
 
 #contact-content {
     background-color: #F4F1BB;
-    padding: 50px;
+    padding: 100px;
     border-radius: 5px;
 }
 
