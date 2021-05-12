@@ -42,7 +42,14 @@ h1 {
     margin-top: 10px;
 }
 
+#about {
+    font-size: 1.2em;
+    background-color: #F4F1BB;
+}
 
+#about h2 {
+    font-size: 3em;
+}
 
 #projects {
     background-color: #E6EBE0;
@@ -51,7 +58,6 @@ h1 {
 
 #projects h2 {
     font-size: 3em;
-    color: darkslategray;
 }
 
 .btn-primary {
