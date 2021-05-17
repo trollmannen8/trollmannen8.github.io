@@ -82,6 +82,7 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: auto;
 }
 
 #effect {
@@ -108,4 +109,10 @@ h2 {
 #contact a:hover {
     color: gray;
     text-decoration: none;
+}
+
+footer {
+    min-height: 50px;
+    background-color: darkslategray;
+    color: white;
 }
