@@ -31,7 +31,7 @@ html {
 
 #welcome {
     padding-top: 200px !important;
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,7 +71,7 @@ h3 {
 
 #separator1 {
     height: 40vh;
-    background-image: url("../img/separator1.jpg");
+    background-image: url("../img/separator1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ h3 {
 
 #separator2 {
     height: 40vh;
-    background-image: url("../img/separator2.jpg");
+    background-image: url("../img/separator2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
