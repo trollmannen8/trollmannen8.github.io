@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed min-vw-100">
+        <a class="navbar-brand" href="#">HomeLab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tech">Techologies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-fluid min-vh-100 pt-5" id="welcome">
+        <div class="container d-flex flex-column justify-content-center align-items-center" id="welcome-content">
+          <h1 class="p-5">HomeLab</h1>
+          <p>Welcome to our page!</p>
+          <p class="text-center">We build Home Labs in Virtualbox</p>
+          <a href="#about" class="btn btn-dark mt-3 mb-5">Learn More</a>
+        </div>
+      </div>
+
+      <div class="container-fluid pt-5" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <h2 class="pb-5">What do we do?</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis modi non eaque odio qui incidunt nam vitae tenetur cum dolores soluta officiis iusto nobis, mollitia tempora adipisci quia assumenda reprehenderit?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio praesentium quia harum minima labore, dolor ipsa at fuga et itaque eaque, cum inventore? Eos libero modi deserunt vel similique? Officia?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod qui animi libero quo eius eum dicta aspernatur dignissimos! Debitis unde mollitia assumenda. Ab fugiat suscipit aliquid quis eveniet sapiente sit?</p>
+            </div>
+            <div class="col-lg-5">
+              <img src="assets/img/server.jpg" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="separator1"></div>
+
+      <div class="container-fluid" id="tech">
+        <div class="container">
+          <h2 class="text-center">Technologies we use</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-content-center">
+              <h3 class="text-center">Windows</h3>
+              <p>Windows Server 2019 for a server with Active Directory and Group Policies. Windows 10 for clients.</p>
+              <img src="assets/img/windowslogo.png" alt="" class="img-fluid p-5">
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-content-center">
+              <h3 class="text-center">Debian</h3>
+              <p>Debian Stable for the webserver. Our preferred webserver application is Apache 2. We use ProFTPD for FTP server.</p>
+              <img src="assets/img/debianlogo.png" alt="" class="img-fluid p-5">
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-content-center">
+              <h3 class="text-center">MikroTik</h3>
+              <p>We use MikroTik RouterOS 6.48.2 for running a virtual router in our virtual network. It's easy to set up.</p>
+              <img src="assets/img/mikrotiklogo.png" alt="" class="img-fluid p-5">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="separator2"></div>
+
+      <div class="container-fluid" id="contact">
+        <div class="container">
+          <h2 class="text-center">Contact</h2>
+          <div class="row">
+            <div class="col-lg-6 px-4">
+              <p class="text-justifiy">If you are interested in our project, feel free to contact us. Please add your name and your email address and write a message. We will answer soon!</p>
+              <img src="assets/img/contact.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 px-4">
+              <form>
+                <div class="form-group">
+                  <label for="fullName">Full Name:</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="row d-flex justify-content-between">
+          <div class="col d-flex flex-column py-3">
+            <p>Find us on social media:</p>
+            <a href=""><i class="fa fa-facebook"></i> Facebook</a>
+            <a href=""><i class="fa fa-instagram"></i> Instagram</a>
+            <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+          </div>
+          <div class="col py-3 d-flex flex-column align-items-center">
+            <p class="text-center">Our developer accounts:</p>
+            <a href=""><i class="text-center fa fa-github"></i> Github</a>
+            <a href=""><i class="text-center fa fa-codepen"></i> CodePen</a>
+            
+          </div>
+          <div class="col py-3">
+            <p class="text-right">&copy; 2021, Takács Dániel</p>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body>
+</html>
