@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/style/style.css">
-    <title>Portfólió</title>
+    <title>Galéria</title>
 </head>
 
 <body>
 
-    <nav class="menu">
+    <nav id="navbar" class="topnav">
         <ul>
             <li><a href="../index.html">Főoldal</a></li>
             <li><a href="index.html">Galéria</a></li>
             <li><a href="../contact/index.html">Elérhetőségek</a></li>
+            <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
         </ul>
     </nav>
 
@@ -138,6 +139,18 @@
                 slides[i].style.display = "none";
             }
             slides[slideIndex - 1].style.display = "block";
+        }
+
+        function menuFunction() {
+            var menu = document.getElementById("navbar");
+            var button = document.getElementById("responsiveButton");
+            if (menu.className === "topnav") {
+            menu.className += " responsive";
+            button.className = "fa fa-close";
+            } else {
+            menu.className = "topnav";
+            button.className = "fa fa-bars";
+            }
         }
     </script>
 </body>

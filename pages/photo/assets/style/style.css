@@ -9,7 +9,7 @@ body {
     background-color: wheat;
 }
 
-.menu {
+#navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -17,14 +17,14 @@ body {
     background-color: darkslategray;
 }
 
-.menu>ul {
+#navbar>ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-.menu>ul>li>a {
+#navbar>ul>li>a {
     font-size: 1.5em;
     line-height: 2em;
     color: white;
@@ -32,7 +32,7 @@ body {
     margin: 0 10px;
 }
 
-.menu>ul>li>a:hover {
+#navbar>ul>li>a:hover {
     text-decoration: underline;
 }
 
@@ -86,8 +86,8 @@ header>h2 {
 }
 
 #profile {
-    width: 500px;
-    height: 500px;
+    width: 48vh;
+    height: 48vh;
     background-image: url("../img/profile.jpg");
     background-size: cover;
     background-position: center;
@@ -221,5 +221,37 @@ header>h2 {
 
     .modal {
         padding-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.hamburger {
+        display: block;
+        float: right;
+    }
+    #navbar ul {
+        flex-direction: column;
+    }
+    .topnav.responsive a {
+        display: block;
+    }
+    .topnav.responsive a.hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
