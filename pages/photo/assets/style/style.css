@@ -36,6 +36,10 @@ body {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+}
+
 header {
     text-align: center;
     padding-top: 100px;
@@ -229,10 +233,10 @@ header>h2 {
         flex-direction: column;
         align-items: center;
     }
-}
 
-.hamburger {
-    display: none;
+    #welcome-text {
+        width: 90vw;
+    }
 }
 
 @media only screen and (max-width: 800px) {
