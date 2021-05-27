@@ -202,7 +202,7 @@ header>h2 {
 
 #contact {
     width: 60vw;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     text-align: center;
 }
@@ -237,13 +237,13 @@ header>h2 {
     padding-right: 5px;
 }
 
-footer,.special-footer {
+footer,#welcome-footer,#contact-footer {
     background-color: darkslategray;
     color: white;
     width: 100%;
 }
 
-.special-footer {
+#welcome-footer,#contact-footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -276,7 +276,7 @@ footer>p {
         width: 90vw;
     }
 
-    .special-footer {
+    #welcome-footer {
         position: relative;
     }
 }
