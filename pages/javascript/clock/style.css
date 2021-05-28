@@ -28,6 +28,7 @@ body {
     background-size: cover;
     padding: 2rem;
     box-shadow: -2px 5px 5px lightgray;
+    opacity: 0.75;
 }
 
 
