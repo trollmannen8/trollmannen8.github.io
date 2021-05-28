@@ -1,5 +1,4 @@
 html {
-    background: linear-gradient(to right, rgba(90, 93, 145, 1) 0%, rgba(173, 255, 99, 1) 100%);
     text-align: center;
     font-size: 10px;
 }
@@ -8,25 +7,27 @@ body {
     margin: 0;
     font-size: 2rem;
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex: 1;
     min-height: 100vh;
-    align-items: center;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 
 .clock {
-    width: 30rem;
-    height: 30rem;
-    border: 20px solid white;
+    width: 200px;
+    height: 200px;
+    /*border: 5px solid rgb(238, 238, 238);*/
     margin: 50px auto;
     border-radius: 100%;
-    position: relative;
+    background-image: url("face.png");
+    background-position: center;
+    background-size: cover;
     padding: 2rem;
-    box-shadow:
-        0 0 0 4px rgba(0, 0, 0, 0.1),
-        inset 0 0 0 3px #EFEFEF,
-        inset 0 0 10px black,
-        0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 5px 5px lightgray;
 }
 
 
@@ -34,10 +35,8 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-3px);
-    background-image: url("face.png");
-    background-position: center;
-    background-size: cover;
+    transform: translateY(-1.5px);
+
 }
 
 .hand {
@@ -48,8 +47,8 @@ body {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transition: 0.3s all;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    /*transition: 0.3s all;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
 }
 
 .hand-hour {
