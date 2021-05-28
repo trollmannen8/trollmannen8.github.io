@@ -35,6 +35,9 @@ body {
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
+    background-image: url("face.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .hand {
@@ -47,4 +50,18 @@ body {
     transform: rotate(90deg);
     transition: 0.3s all;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hand-hour {
+    width: 30%;
+    right: 50%;
+}
+
+.hand-minute {
+    width: 45%;
+    right: 50%;
+}
+
+.hand-seconds {
+    height: 2px;
 }
