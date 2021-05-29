@@ -30,7 +30,6 @@ body {
     opacity: 0.75;
 }
 
-
 .clock-face {
     position: relative;
     width: 100%;
@@ -61,4 +60,15 @@ body {
 
 .hand-seconds {
     height: 2px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .clock {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hand-hour,.hand-minute {
+        height: 4px;
+    }
 }
