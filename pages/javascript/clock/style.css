@@ -20,7 +20,6 @@ body {
 .clock {
     width: 200px;
     height: 200px;
-    /*border: 5px solid rgb(238, 238, 238);*/
     margin: 50px auto;
     border-radius: 100%;
     background-image: url("face.png");
@@ -48,8 +47,6 @@ body {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    /*transition: 0.3s all;
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);*/
 }
 
 .hand-hour {
