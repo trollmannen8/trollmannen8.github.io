@@ -15,7 +15,7 @@ body {
 }
 
 #welcome {
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -78,7 +78,8 @@ h2 {
 }
 
 #contact {
-    background-image: url("../img/contact.jpg");
+    min-width: 100% !important;
+    background-image: url("../img/contact.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,6 +113,7 @@ h2 {
 }
 
 footer {
+    width: 100%;
     min-height: 50px;
     background-color: darkslategray;
     color: white;
