@@ -99,7 +99,7 @@ header>h2 {
 #profile {
     width: 48vh;
     height: 48vh;
-    background-image: url("../img/profile.jpg");
+    background-image: url("../img/profile.webp");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
