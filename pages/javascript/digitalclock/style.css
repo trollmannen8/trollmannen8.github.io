@@ -1,8 +1,33 @@
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    min-height: 100vh;
+    background-image: url("background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #hours, #separator, #minutes {
-    font-size: 2em;
+    font-size: 3em;
 }
 
+#seconds {
+    font-size: 1.5em;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+#clock {
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 0.8;
+    box-shadow: -2px 5px 10px gray;
+}
