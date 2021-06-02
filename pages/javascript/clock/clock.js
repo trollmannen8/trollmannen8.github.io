@@ -1,23 +1,23 @@
-const hourHand = document.querySelector('.hand-hour');
-const minuteHand = document.querySelector('.hand-minute');
-const secondHand = document.querySelector('.hand-seconds');
+var hourHand = document.querySelector('.hand-hour');
+var minuteHand = document.querySelector('.hand-minute');
+var secondHand = document.querySelector('.hand-seconds');
 
 
 function getTime() {
-    const now = new Date();
+    var now = new Date();
 
-    const seconds = now.getSeconds();
-    const secondsDegree = (((seconds / 60) * 360) + 90);
+    var seconds = now.getSeconds();
+    var secondsDegree = (((seconds / 60) * 360) + 90);
     secondHand.style.transform = `rotate(${secondsDegree}deg)`
 
 
-    const minutes = now.getMinutes();
-    const minutesDegree = ((((minutes + seconds / 60) / 60) * 360) + 90);
+    var minutes = now.getMinutes();
+    var minutesDegree = ((((minutes + seconds / 60) / 60) * 360) + 90);
     minuteHand.style.transform = `rotate(${minutesDegree}deg)`
 
 
-    const hours = now.getHours();
-    const hoursDegree = ((((hours + minutes / 60) / 12) * 360) + 90);
+    var hours = now.getHours();
+    var hoursDegree = ((((hours + minutes / 60) / 12) * 360) + 90);
     hourHand.style.transform = `rotate(${hoursDegree}deg)`
 
 
