@@ -21,7 +21,9 @@ body {
 }
 
 #date {
-    padding-top: 5px;
+    padding: 2px 25px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #clock {
@@ -34,4 +36,26 @@ body {
     margin-top: 100px;
     opacity: 0.8;
     box-shadow: -2px 5px 10px gray;
+}
+
+#h24 {
+    display: none;
+}
+
+#h12, #h24 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 15px;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    opacity: 0.8;
+    box-shadow: -2px 5px 10px gray;
+}
+
+#h12:hover, #h24:hover {
+    background-color: rgb(34, 61, 61);
 }

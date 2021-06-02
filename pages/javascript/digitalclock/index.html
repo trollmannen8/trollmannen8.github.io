@@ -14,10 +14,13 @@
     <div id="content">
         <div id="clock">
             <div id="date">
-                <span id="weekday"></span>
-                <span id="month"></span>
-                <span> - </span>
-                <span id="day"></span>
+                <span id="ampm"></span>
+                <div id="fulldate">
+                    <span id="weekday"></span>
+                    <span id="month"></span>
+                    <span> - </span>
+                    <span id="day"></span>
+                </div>
             </div>
             <span id="hours"></span>
             <span id="separator">:</span>
@@ -25,6 +28,9 @@
             <span id="seconds"></span>
         </div>
     </div>
+
+    <button id="h12">Click to change to 12H</button>
+    <button id="h24">Click to change to 24H</button>
     
     <script src="digitalclock.js"></script>
 

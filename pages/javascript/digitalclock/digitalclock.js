@@ -13,6 +13,19 @@ var week = {
     5: "FRI",
     6: "SAT"
 }
+var h24 = true;
+
+document.getElementById("h12").addEventListener("click", function() {
+    h24 = false;
+    document.getElementById("h12").style.display = "none";
+    document.getElementById("h24").style.display = "block";
+});
+
+document.getElementById("h24").addEventListener("click", function() {
+    h24 = true;
+    document.getElementById("h24").style.display = "none";
+    document.getElementById("h12").style.display = "block";
+});
 
 function displayTime() {
     var time = new Date();
@@ -22,6 +35,15 @@ function displayTime() {
     var weekdayValue = week[time.getDay()];
     var monthValue = time.getMonth() + 1;
     var dayValue = time.getDate();
+    if (h24 === false && hoursValue > 12) {
+        hoursValue = hoursValue - 12;
+        document.getElementById("ampm").innerHTML = "PM";
+    } else {
+        document.getElementById("ampm").innerHTML = "AM";
+    }
+    if (h24 === true) {
+        document.getElementById("ampm").innerHTML = "24H";
+    }
     if (hoursValue < 10) {
         hoursValue = "0" + hoursValue.toString();
     }
