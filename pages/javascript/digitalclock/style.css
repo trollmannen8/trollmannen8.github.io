@@ -24,6 +24,7 @@ body {
     padding: 2px 25px;
     display: flex;
     justify-content: space-between;
+    text-shadow: 0 0 3px lightgray;
 }
 
 #clock {
@@ -36,6 +37,7 @@ body {
     margin-top: 100px;
     opacity: 0.8;
     box-shadow: -2px 5px 10px gray;
+    text-shadow: 0 0 3px lightgray;
 }
 
 #h24 {
