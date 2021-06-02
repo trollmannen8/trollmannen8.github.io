@@ -5,13 +5,13 @@ var weekday = document.getElementById("weekday");
 var month = document.getElementById("month");
 var day = document.getElementById("day");
 var week = {
-    0: "SU",
-    1: "MO",
-    2: "TU",
-    3: "WE",
-    4: "TH",
-    5: "FR",
-    6: "SA"
+    0: "SUN",
+    1: "MON",
+    2: "TUE",
+    3: "WED",
+    4: "THU",
+    5: "FRI",
+    6: "SAT"
 }
 
 function displayTime() {

@@ -20,6 +20,10 @@ body {
     justify-content: center;
 }
 
+#date {
+    padding-top: 5px;
+}
+
 #clock {
     background-color: black;
     color: white;
