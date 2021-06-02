@@ -59,5 +59,10 @@ body {
 }
 
 #h12:hover, #h24:hover {
-    background-color: rgb(34, 61, 61);
+    background-color: rgb(15, 29, 29);
+}
+
+#h12:active, #h24:active {
+    transform: scale(0.98);
+    box-shadow: -1px 2.5px 5px gray;
 }

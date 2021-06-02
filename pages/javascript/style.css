@@ -12,14 +12,16 @@ body {
 h1 {
     padding: 50px;
     font-size: 4em;
+    margin-bottom: 40px;
 }
 
 h1,p {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 p {
+    margin: 40px auto;
+    width: 50%;
     font-size: 1.5em;
 }
 
@@ -30,6 +32,7 @@ a {
     background-color: darkslategray;
     padding: 10px 15px;
     border-radius: 5px;
+    box-shadow: 0 0 5px darkslategray;
 }
 
 a:hover {
