@@ -19,16 +19,16 @@ form.addEventListener("submit", e => {
       }@4x.png`;
 
       const markup = `
-        <h2 class="city-name" data-name="${name},${sys.country}">
+        <div class="city-name" data-name="${name},${sys.country}">
           <span>${name},</span>
           <span>${sys.country}</span>
-        </h2>
+        </div>
         <div class="display">
           <figure>
             <img class="city-icon" src=${icon} alt=${weather[0]["main"]}>
           </figure>
           <div class="weather-text">
-            <div class="city-temp">${Math.round(main.temp)} °C</div>
+            <div class="city-temp">${Math.round(main.temp)}°C</div>
             <div class="description-text">${weather[0]["description"]}</div>
           </div>
         </div>
