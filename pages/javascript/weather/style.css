@@ -53,6 +53,11 @@ button {
     align-items: center;
 }
 
+.city-icon {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
 .city-name {
     font-size: 3em;
 }
