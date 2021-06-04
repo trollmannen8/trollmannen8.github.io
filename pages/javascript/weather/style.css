@@ -20,7 +20,20 @@ h1 {
     text-align: center;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.msg {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
+}
+
 input, button {
+    margin: 0 5px;
     border: none;
     outline: none;
     font-size: 1.5em;
@@ -67,4 +80,22 @@ button {
 
 .description-text {
     font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .ajax-section {
+        width: 90vw;
+        padding: 5px;
+    }
+    .city-temp {
+        font-size: 3em;
+    }
+    .city-icon {
+        max-width: 200px;
+        max-height: auto;
+    }
+    form {
+        width: 90vw;
+    }
 }
