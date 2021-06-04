@@ -4,10 +4,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    background-image: url("background.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, #48c6ef 0%, #6f86d6 100%);
 }
 
 h1 {
