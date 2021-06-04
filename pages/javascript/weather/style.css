@@ -98,10 +98,6 @@ button {
     .city-temp {
         font-size: 3em;
     }
-    .city-icon {
-        max-width: 200px;
-        max-height: auto;
-    }
     .display {
         flex-direction: column;
     }
