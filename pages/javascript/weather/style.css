@@ -25,9 +25,15 @@ input, button {
     border: none;
     outline: none;
     font-size: 1.5em;
+    line-height: 1.5em;
     border-radius: 5px;
     padding: 2.5px 10px;
     box-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
+}
+
+button {
+    background-color: darkslateblue;
+    color: white;
 }
 
 .ajax-section {
