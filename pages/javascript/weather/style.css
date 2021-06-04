@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh;
+    min-height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url("background.webp");
     background-position: center;
@@ -27,6 +27,7 @@ input, button {
     font-size: 1.5em;
     border-radius: 5px;
     padding: 2.5px 10px;
+    box-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
 }
 
 .ajax-section {
@@ -35,12 +36,10 @@ input, button {
     padding: 20px;
     width: 500px;
     text-align: center;
-    background-color: rgba(150, 150, 240, 0.5);
+    background-color: rgba(240, 240, 240, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
     backdrop-filter: blur(3px);
-    color: white;
-    text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
 }
 
 .display {
