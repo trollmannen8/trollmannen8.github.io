@@ -1,5 +1,5 @@
 body {
-    min-height: 100%;
+    min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url("background.webp");
     background-position: center;
