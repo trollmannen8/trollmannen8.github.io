@@ -55,7 +55,7 @@ fetch(url)
         endHour = "0" + endHour.toString();
       }
       alert.innerHTML = `
-      ${data.alerts[0].description} Kezdés: ${startHour}:${alertStart.getMinutes()}, vége: ${endHour}:${alertEnd.getMinutes()}
+      ${data.alerts[0].description} Starts: ${startHour}:${alertStart.getMinutes()}, ends: ${endHour}:${alertEnd.getMinutes()}
       `
     }
 
@@ -80,10 +80,7 @@ fetch(url)
     `
 
     for (let i = 1; i <= 24; i++) {
-      currentHour = time.getHours() + i;
-      if (currentHour >= 24) {
-        currentHour = currentHour -24
-      }
+      currentHour = new Date(data.hourly[i].dt * 1000);
       if (currentHour < 10) {
         currentHour = "0" + currentHour.toString();
       }
