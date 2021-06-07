@@ -80,7 +80,7 @@ fetch(url)
     `
 
     for (let i = 1; i <= 24; i++) {
-      currentHour = new Date(data.hourly[i].dt * 1000);
+      currentHour = new Date(data.hourly[i].dt * 1000).getHours();
       if (currentHour < 10) {
         currentHour = "0" + currentHour.toString();
       }
