@@ -50,7 +50,7 @@ fetch(url)
       </div>`
     }
 
-    for (let j = 1; j <= 7; j++) {
+    for (let j = 0; j <= 6; j++) {
       let day = time.getDay();
       if (day + j > 6) {
         day = day - 7;
