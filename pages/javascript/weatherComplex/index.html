@@ -11,22 +11,38 @@
 </head>
 <body>
     
-    <h1>JavaScript időjárás</h1>
-
-    <h2>Budapest időjárása</h2>
+    <h1>Budapest időjárása</h1>
 
     <div class="top-banner">
         <span class="msg"></span>
     </div>
 
-    <div class="ajax-section">
-        <div id="content-current"></div>
-    </div>
-
-    <div class="ajax-section">
-        <div id="content-hourly">
-            <h3>Óránkénti előrejelzés a következő 24 órára</h3>
+    <div class="row">
+        
+        <div class="column">
+            
+            <div class="ajax-section">
+                <div id="content-current"></div>
+            </div>
+            
+            <div class="ajax-section">
+                <div id="content-hourly">
+                    <h3>Óránkénti előrejelzés a következő 24 órára</h3>
+                </div>
+            </div>
+            
         </div>
+        
+        <div class="column">
+
+            <div class="ajax-section">
+                <div id="content-daily">
+                    <h3>Előrejelzés hét napra</h3>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
     <script src="weather.js"></script>
