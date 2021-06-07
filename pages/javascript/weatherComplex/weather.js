@@ -34,12 +34,30 @@ var month = {
   11: "december"
 }
 
+
 fetch(url)
-  .then(response => response.json())
-  .then(data => {
+.then(response => response.json())
+.then(data => {
     console.log(data);
+    console.log(data.hasOwnProperty("alerts"));
     sunRise = new Date(data.current.sunrise * 1000);
     sunSet = new Date(data.current.sunset * 1000);
+
+    if (data.hasOwnProperty("alerts")) {
+      var alertStart = new Date(data.alerts[0].start * 1000);
+      var alertEnd = new Date(data.alerts[0].end * 1000);
+      var startHour = alertStart.getHours();
+      if (startHour < 10) {
+        startHour = "0" + startHour.toString();
+      }
+      var endHour = alertEnd.getHours();
+      if (endHour < 10) {
+        endHour = "0" + endHour.toString();
+      }
+      alert.innerHTML = `
+      ${data.alerts[0].description} Kezdés: ${startHour}:${alertStart.getMinutes()}, vége: ${endHour}:${alertEnd.getMinutes()}
+      `
+    }
 
     contentCurrent.innerHTML += `
     <h3>Aktuális időjárás</h3>
