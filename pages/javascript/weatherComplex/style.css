@@ -21,12 +21,6 @@ h3 {
     padding-bottom: 25px;
 }
 
-.top-banner {
-    margin: 0 auto;
-    width: 600px;
-    text-align: center;
-}
-
 .msg {
     text-align: center;
     font-size: 2em;
@@ -41,7 +35,7 @@ h3 {
 }
 
 .column {
-    margin: 20px;
+    margin:10px;
 }
 
 .ajax-section {
@@ -53,11 +47,6 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
     backdrop-filter: blur(3px);
-}
-
-.display {
-    display: flex;
-    align-items: center;
 }
 
 .current, .daily-container {
@@ -97,25 +86,16 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
-    body {
-        height: 150vh;
-    }
-    .ajax-section, .container, .top-banner {
+
+    .ajax-section {
         width: 90vw;
-        padding: 5px;
+        padding: 10px;
     }
     .city-temp {
         font-size: 3em;
     }
-    .display {
-        flex-direction: column;
-    }
-    form {
-        width: 90vw;
-        flex-direction: column;
-        align-items: center;
-    }
     .row {
         flex-direction: column;
+        align-items: center;
     }
 }
