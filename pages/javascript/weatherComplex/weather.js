@@ -80,9 +80,6 @@ fetch(url)
       </div>
       `
     }
-
-    
-      
   })
   .catch(() => {
     msg.textContent = "Hiba történt.";
