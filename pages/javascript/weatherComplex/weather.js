@@ -6,6 +6,7 @@ const apiKey = "944cb94e82e619709c4178e16db05e96";
 const url = `https://api.openweathermap.org/data/2.5/onecall?lat=47.49&lon=19.04&appid=${apiKey}&units=metric&lang=hu`;
 const time = new Date();
 var currentHour;
+var currentDate;
 var weekDays = {
   0: "Vasárnap",
   1: "Hétfő",
@@ -15,6 +16,20 @@ var weekDays = {
   5: "Péntek",
   6: "Szombat"
 };
+var month = {
+  0: "január",
+  1: "február",
+  2: "március",
+  3: "április",
+  4: "május",
+  5: "június",
+  6: "július",
+  7: "augusztus",
+  8: "szeptember",
+  9: "október",
+  10: "november",
+  11: "december"
+}
 
 console.log(Date.now());
 console.log(time.getDay())
@@ -51,13 +66,10 @@ fetch(url)
     }
 
     for (let j = 0; j <= 6; j++) {
-      let day = time.getDay();
-      if (day + j > 6) {
-        day = day - 7;
-      }
+      currentDate = new Date(data.daily[j].dt * 1000);
       contentDaily.innerHTML += `
       <div class="daily">
-        <h4>${weekDays[day + j]}</h4>
+        <h4>${weekDays[currentDate.getDay()]} (${month[currentDate.getMonth()]} ${currentDate.getDate()}.)</h4>
         <div class="daily-container">
           <img class="city-icon" src="https://openweathermap.org/img/wn/${data.daily[j].weather[0]["icon"]}@2x.png">
           <div class="city-text">
