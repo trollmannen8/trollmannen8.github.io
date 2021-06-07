@@ -41,9 +41,12 @@ fetch(url)
       if (currentHour < 10) {
         currentHour = "0" + currentHour.toString();
       }
-      contentHourly.innerHTML += `<div>${currentHour}:00 ${Math.round(data.hourly[i - 1].temp)}˚C 
-      <img class="small-icon" src="https://openweathermap.org/img/wn/${data.hourly[i - 1].weather[0]["icon"]}@2x.png">
-      ${data.hourly[i - 1].weather[0]["description"]} 
+      contentHourly.innerHTML += `
+      <div class="hourly-container">
+        <span class="hour">${currentHour}:00: </span>
+        <img class="small-icon" src="https://openweathermap.org/img/wn/${data.hourly[i - 1].weather[0]["icon"]}@2x.png">
+        <span>${Math.round(data.hourly[i - 1].temp)}˚C, </span>
+        <span>${data.hourly[i - 1].weather[0]["description"]}</span>
       </div>`
     }
 
@@ -54,7 +57,7 @@ fetch(url)
       }
       contentDaily.innerHTML += `
       <div class="daily">
-        <h3>${weekDays[day + j]}</h3>
+        <h4>${weekDays[day + j]}</h4>
         <div class="daily-container">
           <img class="city-icon" src="https://openweathermap.org/img/wn/${data.daily[j].weather[0]["icon"]}@2x.png">
           <div class="city-text">
