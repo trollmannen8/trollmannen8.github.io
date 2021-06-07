@@ -38,7 +38,7 @@ h3 {
     margin:10px;
 }
 
-.ajax-section {
+.ajax-section, .ajax-section-top {
     display: block;
     margin: 20px auto;
     padding: 20px;
@@ -49,8 +49,18 @@ h3 {
     backdrop-filter: blur(3px);
 }
 
+.ajax-top {
+    display: flex;
+    justify-content: space-between;
+}
+
 .current, .daily-container {
     display: flex;
+}
+
+.additional-data {
+    display: flex;
+    flex-direction: column;
 }
 
 .city-text {

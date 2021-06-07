@@ -1,4 +1,5 @@
 const msg = document.querySelector(".top-banner .msg");
+const alert = document.querySelector("#alert");
 const contentCurrent = document.querySelector("#content-current");
 const contentHourly = document.querySelector("#content-hourly");
 const contentDaily = document.querySelector("#content-daily");
@@ -7,6 +8,8 @@ const url = `https://api.openweathermap.org/data/2.5/onecall?lat=47.49&lon=19.04
 const time = new Date();
 var currentHour;
 var currentDate;
+var sunRise;
+var sunSet;
 var weekDays = {
   0: "Vasárnap",
   1: "Hétfő",
@@ -31,23 +34,33 @@ var month = {
   11: "december"
 }
 
-console.log(Date.now());
-console.log(time.getDay())
-
 fetch(url)
   .then(response => response.json())
   .then(data => {
     console.log(data);
+    sunRise = new Date(data.current.sunrise * 1000);
+    sunSet = new Date(data.current.sunset * 1000);
+
     contentCurrent.innerHTML += `
     <h3>Aktuális időjárás</h3>
-    <div class="current">
-      <img class="city-icon" src="https://openweathermap.org/img/wn/${data.current.weather[0]["icon"]}@2x.png">
-      <div class="city-text">
-        <span class="city-temp">${Math.round(data.current.temp)}˚C</span>
-        <span class="description-text">${data.current.weather[0]["description"]}</span>
+    <div class="ajax-top">
+      <div class="current">
+        <img class="city-icon" src="https://openweathermap.org/img/wn/${data.current.weather[0]["icon"]}@2x.png">
+        <div class="city-text">
+          <span class="city-temp">${Math.round(data.current.temp)}˚C</span>
+          <span class="description-text">${data.current.weather[0]["description"]}</span>
+        </div>
+      </div>
+      <div class="additional-data">
+        <span>UV index: ${data.current.uvi}</span>
+        <span>Valós érzet: ${Math.round(data.current.feels_like)}°C</span>
+        <span>Páratartalom: ${data.current.humidity}%</span>
+        <span>Napkelte: 0${sunRise.getHours()}:${sunRise.getMinutes()}</span>
+        <span>Napnyugta: ${sunSet.getHours()}:${sunSet.getMinutes()}</span>
       </div>
     </div>
     `
+
     for (let i = 1; i <= 24; i++) {
       currentHour = time.getHours() + i;
       if (currentHour >= 24) {
