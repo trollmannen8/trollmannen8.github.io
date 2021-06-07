@@ -52,11 +52,11 @@ fetch(url)
         </div>
       </div>
       <div class="additional-data">
-        <span>UV index: ${data.current.uvi}</span>
-        <span>Valós érzet: ${Math.round(data.current.feels_like)}°C</span>
-        <span>Páratartalom: ${data.current.humidity}%</span>
-        <span>Napkelte: 0${sunRise.getHours()}:${sunRise.getMinutes()}</span>
-        <span>Napnyugta: ${sunSet.getHours()}:${sunSet.getMinutes()}</span>
+        <span><span class="legend">UV index: </span>${data.current.uvi}</span>
+        <span><span class="legend">Valós érzet: </span>${Math.round(data.current.feels_like)}°C</span>
+        <span><span class="legend">Páratartalom: </span>${data.current.humidity}%</span>
+        <span><span class="legend">Napkelte: </span>0${sunRise.getHours()}:${sunRise.getMinutes()}</span>
+        <span><span class="legend">Napnyugta: </span>${sunSet.getHours()}:${sunSet.getMinutes()}</span>
       </div>
     </div>
     `
@@ -71,7 +71,7 @@ fetch(url)
       }
       contentHourly.innerHTML += `
       <div class="hourly-container">
-        <span class="hour">${currentHour}:00: </span>
+        <span class="legend">${currentHour}:00: </span>
         <img class="small-icon" src="https://openweathermap.org/img/wn/${data.hourly[i - 1].weather[0]["icon"]}@2x.png">
         <span>${Math.round(data.hourly[i - 1].temp)}˚C, </span>
         <span>${data.hourly[i - 1].weather[0]["description"]}</span>
@@ -86,8 +86,8 @@ fetch(url)
         <div class="daily-container">
           <img class="city-icon" src="https://openweathermap.org/img/wn/${data.daily[j].weather[0]["icon"]}@2x.png">
           <div class="city-text">
-            <span class="city-temp-daily">Nappal: ${Math.round(data.daily[j].temp.day)}˚C, ${data.daily[j].weather[0]["description"]}</span>
-            <span class="city-temp-daily">Éjjel: ${Math.round(data.daily[j].temp.night)}˚C</span>
+            <span class="city-temp-daily"><span class="legend">Nappal: </span>${Math.round(data.daily[j].temp.day)}˚C, ${data.daily[j].weather[0]["description"]}</span>
+            <span class="city-temp-daily"><span class="legend">Éjjel: </span>${Math.round(data.daily[j].temp.night)}˚C</span>
           </div>
         </div>
       </div>
@@ -97,4 +97,3 @@ fetch(url)
   .catch(() => {
     msg.textContent = "Hiba történt.";
 });
-

@@ -51,7 +51,7 @@ h3 {
 
 .ajax-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .current, .daily-container {
@@ -73,7 +73,7 @@ h3 {
     line-height: 2.5em;
 }
 
-.hour {
+.legend {
     font-weight: 600;
 }
 
@@ -105,6 +105,10 @@ h3 {
         font-size: 3em;
     }
     .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .current {
         flex-direction: column;
         align-items: center;
     }
