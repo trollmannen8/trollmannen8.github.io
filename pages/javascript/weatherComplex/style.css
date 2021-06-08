@@ -70,6 +70,13 @@ button {
     text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
 }
 
+.tip {
+    font-size: 0.8em;
+    color: white;
+    text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
+    margin-bottom: -20px;
+}
+
 #city {
     margin: -40px 0;
     text-align: center;
