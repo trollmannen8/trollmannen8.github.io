@@ -162,4 +162,11 @@ button {
         flex-direction: column;
         align-items: center;
     }
+    .top-banner{
+        width: 90vw;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 }

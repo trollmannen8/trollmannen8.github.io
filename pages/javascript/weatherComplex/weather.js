@@ -62,9 +62,7 @@ form.addEventListener("submit", e => {
   fetch(url)
   .then(response => response.json())
   .then(weather => {
-    ajaxItems.forEach(function(item) {
-      item.style.display = "block";
-    });
+
     console.log(weather);
     console.log(weather.hasOwnProperty("alerts"));
     sunRise = new Date(weather.current.sunrise * 1000);
@@ -93,6 +91,10 @@ form.addEventListener("submit", e => {
       ${weather.alerts[0].event}, starts: ${startHour}:${startMinute}, ends: ${endHour}:${endMinute}
       `
     }
+
+    ajaxItems.forEach(function(item) {
+      item.style.display = "block";
+    });
 
     city.innerHTML += `<h3>${data[0].name}, ${data[0].country}</h3>`
     contentCurrent.innerHTML += `
@@ -149,6 +151,9 @@ form.addEventListener("submit", e => {
   })
   .catch(() => {
     msg.textContent = "Nincs ilyen város.";
+    ajaxItems.forEach(function(item) {
+      item.style.display = "none";
+    });
   });
 
 msg.textContent = "";
