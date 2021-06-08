@@ -22,6 +22,15 @@ var weekDays = {
   5: "Péntek",
   6: "Szombat"
 };
+var weekDaysEn = {
+  0: "Sunday",
+  1: "Monday",
+  2: "Tuesday",
+  3: "Wednesday",
+  4: "Thursday",
+  5: "Friday",
+  6: "Saturday"
+}
 var month = {
   0: "január",
   1: "február",
@@ -88,7 +97,7 @@ form.addEventListener("submit", e => {
         endMinute = "0" + endMinute.toString();
       }
       alert.innerHTML = `
-      ${weather.alerts[0].event}, starts: ${startHour}:${startMinute}, ends: ${endHour}:${endMinute}
+      ${weather.alerts[0].event}, starts: ${weekDaysEn[alertStart.getDay()]}, ${startHour}:${startMinute}, ends: ${weekDaysEn[alertEnd.getDay()]}, ${endHour}:${endMinute}
       `
     }
 
