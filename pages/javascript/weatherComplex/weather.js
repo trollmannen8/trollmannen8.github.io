@@ -47,7 +47,7 @@ form.addEventListener("submit", e => {
 
   alert.innerHTML = "";
 
-  const urlGeo = `http://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=5&appid=${apiKey}`
+  const urlGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=5&appid=${apiKey}`
 
   
   fetch(urlGeo)
