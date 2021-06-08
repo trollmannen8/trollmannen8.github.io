@@ -70,6 +70,13 @@ button {
     text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
 }
 
+#city {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
+}
+
 .row {
     display: flex;
     justify-content: center;

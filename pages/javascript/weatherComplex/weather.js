@@ -1,5 +1,6 @@
 const form = document.querySelector(".top-banner form");
 const input = document.querySelector(".top-banner input");
+const city = document.getElementById("city");
 const msg = document.querySelector(".top-banner .msg");
 const alert = document.querySelector("#alert");
 const contentCurrent = document.querySelector("#content-current");
@@ -46,6 +47,7 @@ form.addEventListener("submit", e => {
 
 
   alert.innerHTML = "";
+  city.innerHTML = "";
 
   const urlGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=5&appid=${apiKey}`
 
@@ -92,8 +94,9 @@ form.addEventListener("submit", e => {
       `
     }
 
+    city.innerHTML += `<h3>${data[0].name}, ${data[0].country}</h3>`
     contentCurrent.innerHTML += `
-    <h3>Aktuális időjárás - ${data[0].name}, ${data[0].country}</h3>
+    <h3>Aktuális időjárás</h3>
     <div class="ajax-top">
       <div class="current">
         <img class="city-icon" src="https://openweathermap.org/img/wn/${weather.current.weather[0]["icon"]}@2x.png">
