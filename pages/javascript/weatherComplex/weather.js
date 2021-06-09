@@ -7,13 +7,8 @@ const contentCurrent = document.querySelector("#content-current");
 const contentHourly = document.querySelector("#content-hourly");
 const contentDaily = document.querySelector("#content-daily");
 const apiKey = "944cb94e82e619709c4178e16db05e96";
-const url = `https://api.openweathermap.org/data/2.5/onecall?lat=47.49&lon=19.04&appid=${apiKey}&units=metric&lang=hu`;
 const time = new Date();
-var currentHour;
-var currentDate;
-var sunRise;
-var sunSet;
-var weekDays = {
+const weekDays = {
   0: "Vasárnap",
   1: "Hétfő",
   2: "Kedd",
@@ -22,7 +17,7 @@ var weekDays = {
   5: "Péntek",
   6: "Szombat"
 };
-var weekDaysEn = {
+const weekDaysEn = {
   0: "Sunday",
   1: "Monday",
   2: "Tuesday",
@@ -31,7 +26,7 @@ var weekDaysEn = {
   5: "Friday",
   6: "Saturday"
 }
-var month = {
+const month = {
   0: "január",
   1: "február",
   2: "március",
@@ -46,6 +41,13 @@ var month = {
   11: "december"
 }
 
+function twoDigits(digit) {
+  if (digit < 10) {
+    digit = "0" + digit.toString();
+  }
+  return digit;
+}
+
 form.addEventListener("submit", e => {
   e.preventDefault();
   contentCurrent.innerHTML = "";
@@ -54,12 +56,10 @@ form.addEventListener("submit", e => {
   const inputVal = input.value;
   const ajaxItems = document.querySelectorAll(".ajax-section");
 
-
   alert.innerHTML = "";
   city.innerHTML = "";
 
   const urlGeo = `https://api.openweathermap.org/geo/1.0/direct?q=${inputVal}&limit=5&appid=${apiKey}`
-
   
   fetch(urlGeo)
   .then(response => response.json())
@@ -74,30 +74,20 @@ form.addEventListener("submit", e => {
 
     console.log(weather);
     console.log(weather.hasOwnProperty("alerts"));
-    sunRise = new Date(weather.current.sunrise * 1000);
-    sunSet = new Date(weather.current.sunset * 1000);
+    var sunRise = new Date(weather.current.sunrise * 1000);
+    var sunSet = new Date(weather.current.sunset * 1000);
 
     if (weather.hasOwnProperty("alerts")) {
       var alertStart = new Date(weather.alerts[0].start * 1000);
       var alertEnd = new Date(weather.alerts[0].end * 1000);
       var startHour = alertStart.getHours();
-      if (startHour < 10) {
-        startHour = "0" + startHour.toString();
-      }
       var startMinute = alertStart.getMinutes();
-      if (startMinute < 10) {
-        startMinute = "0" + startMinute.toString();
-      }
       var endHour = alertEnd.getHours();
-      if (endHour < 10) {
-        endHour = "0" + endHour.toString();
-      }
       var endMinute = alertEnd.getMinutes();
-      if (endMinute < 10) {
-        endMinute = "0" + endMinute.toString();
-      }
       alert.innerHTML = `
-      ${weather.alerts[0].event}, starts: ${weekDaysEn[alertStart.getDay()]}, ${startHour}:${startMinute}, ends: ${weekDaysEn[alertEnd.getDay()]}, ${endHour}:${endMinute}
+      ${weather.alerts[0].event},
+       starts: ${weekDaysEn[alertStart.getDay()]}, ${twoDigits(startHour)}:${twoDigits(startMinute)},
+        ends: ${weekDaysEn[alertEnd.getDay()]}, ${twoDigits(endHour)}:${twoDigits(endMinute)}
       `
     }
 
@@ -120,21 +110,17 @@ form.addEventListener("submit", e => {
         <span><span class="legend">UV index: </span>${weather.current.uvi}</span>
         <span><span class="legend">Valós érzet: </span>${Math.round(weather.current.feels_like)}°C</span>
         <span><span class="legend">Páratartalom: </span>${weather.current.humidity}%</span>
-        <span><span class="legend">Napkelte: </span>0${sunRise.getHours()}:${sunRise.getMinutes()}</span>
-        <span><span class="legend">Napnyugta: </span>${sunSet.getHours()}:${sunSet.getMinutes()}</span>
+        <span><span class="legend">Napkelte: </span>${twoDigits(sunRise.getHours())}:${twoDigits(sunRise.getMinutes())}</span>
+        <span><span class="legend">Napnyugta: </span>${twoDigits(sunSet.getHours())}:${twoDigits(sunSet.getMinutes())}</span>
       </div>
     </div>
     `
     contentHourly.innerHTML += `<h3>Óránkénti előrejelzés a következő 24 órára</h3>`
     for (let i = 1; i <= 24; i++) {
-      currentHour = new Date(weather.hourly[i].dt * 1000).getHours();
-      if (currentHour < 10) {
-        currentHour = "0" + currentHour.toString();
-      }
+      var currentHour = new Date(weather.hourly[i].dt * 1000).getHours();
       contentHourly.innerHTML += `
-      
       <div class="hourly-container">
-        <span class="legend">${currentHour}:00: </span>
+        <span class="legend">${twoDigits(currentHour)}:00: </span>
         <img class="small-icon" src="https://openweathermap.org/img/wn/${weather.hourly[i - 1].weather[0]["icon"]}@2x.png">
         <span>${Math.round(weather.hourly[i - 1].temp)}˚C, </span>
         <span>${weather.hourly[i - 1].weather[0]["description"]}</span>
@@ -142,7 +128,7 @@ form.addEventListener("submit", e => {
     }
     contentDaily.innerHTML += `<h3>Előrejelzés 7 napra</h3>`
     for (let j = 0; j <= 6; j++) {
-      currentDate = new Date(weather.daily[j].dt * 1000);
+      var currentDate = new Date(weather.daily[j].dt * 1000);
       contentDaily.innerHTML += `
       <div class="daily">
         <h4>${weekDays[currentDate.getDay()]} (${month[currentDate.getMonth()]} ${currentDate.getDate()}.)</h4>
