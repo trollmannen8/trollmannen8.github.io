@@ -5,36 +5,49 @@
 }
 
 body {
-    background-color: wheat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, hsl(5,89%,72%) 0%, hsl(5,89%,72%) 38%,hsl(50,89%,72%) 38%, hsl(50,89%,72%) 44%,hsl(95,89%,72%) 44%, hsl(95,89%,72%) 60%,hsl(140,89%,72%) 60%, hsl(140,89%,72%) 69%,hsl(185,89%,72%) 69%, hsl(185,89%,72%) 79%,hsl(230,89%,72%) 79%, hsl(230,89%,72%) 81%,hsl(275,89%,72%) 81%, hsl(275,89%,72%) 86%,hsl(320,89%,72%) 86%, hsl(320,89%,72%) 100%);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
     padding: 50px;
     font-size: 4em;
     margin-bottom: 40px;
+    text-shadow: 0 0 5px gray;
 }
 
 h1,p {
     text-align: center;
 }
 
+#content {
+    margin: 0 auto;
+    width: 60vw;
+    padding: 20px;
+    background-color: rgba(130, 247, 169, 0.85);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
 p {
     margin: 40px auto;
-    width: 50%;
     font-size: 1.5em;
 }
 
 a {
     font-size: 0.8em;
     text-decoration: none;
-    color: white;
-    background-color: darkslategray;
+    color: black;
+    background-color: hsl(5,89%,72%);
     padding: 10px 15px;
     border-radius: 5px;
-    box-shadow: 0 0 5px darkslategray;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 a:hover {
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(247, 165, 158);
 }
