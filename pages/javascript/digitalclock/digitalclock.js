@@ -4,15 +4,7 @@ var seconds = document.getElementById("seconds");
 var weekday = document.getElementById("weekday");
 var month = document.getElementById("month");
 var day = document.getElementById("day");
-var week = {
-    0: "SUN",
-    1: "MON",
-    2: "TUE",
-    3: "WED",
-    4: "THU",
-    5: "FRI",
-    6: "SAT"
-}
+var week = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 var h24 = true;
 
 document.getElementById("h12").addEventListener("click", function() {
