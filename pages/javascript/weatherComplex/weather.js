@@ -7,38 +7,38 @@ const contentCurrent = document.querySelector("#content-current");
 const contentHourly = document.querySelector("#content-hourly");
 const contentDaily = document.querySelector("#content-daily");
 const apiKey = "944cb94e82e619709c4178e16db05e96";
-const weekDays = {
-  0: "Vasárnap",
-  1: "Hétfő",
-  2: "Kedd",
-  3: "Szerda",
-  4: "Csütörtök",
-  5: "Péntek",
-  6: "Szombat"
-};
-const weekDaysEn = {
-  0: "Sunday",
-  1: "Monday",
-  2: "Tuesday",
-  3: "Wednesday",
-  4: "Thursday",
-  5: "Friday",
-  6: "Saturday"
-}
-const month = {
-  0: "január",
-  1: "február",
-  2: "március",
-  3: "április",
-  4: "május",
-  5: "június",
-  6: "július",
-  7: "augusztus",
-  8: "szeptember",
-  9: "október",
-  10: "november",
-  11: "december"
-}
+const weekDays = [
+  "Vasárnap",
+  "Hétfő",
+  "Kedd",
+  "Szerda",
+  "Csütörtök",
+  "Péntek",
+  "Szombat"
+];
+const weekDaysEn = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+const month = [
+  "január",
+  "február",
+  "március",
+  "április",
+  "május",
+  "június",
+  "július",
+  "augusztus",
+  "szeptember",
+  "október",
+  "november",
+  "december"
+];
 
 function twoDigits(digit) {
   if (digit < 10) {
