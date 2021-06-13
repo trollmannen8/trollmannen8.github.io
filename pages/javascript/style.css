@@ -25,7 +25,7 @@ h1,p {
 }
 
 #content {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 60vw;
     padding: 20px;
     background-color: rgba(205, 241, 44, 0.3);
