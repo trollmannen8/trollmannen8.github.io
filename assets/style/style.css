@@ -131,3 +131,9 @@ footer {
     background-color: darkslategray;
     color: white;
 }
+
+@media only screen and (max-width: 800px) {
+    #contact a {
+        font-size: 1em;
+    }
+}
