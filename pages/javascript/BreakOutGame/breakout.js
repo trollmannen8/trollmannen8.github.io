@@ -2,8 +2,8 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var x = canvas.width/2;
 var y = canvas.height-30;
-var dx = 2;
-var dy = -2;
+var dx = 3;
+var dy = -3;
 var ballRadius = 8;
 var paddleHeight = 10;
 var paddleWidth = 50;
@@ -104,7 +104,7 @@ function drawBall() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = "#FFFF00";
+    ctx.fillStyle = "#FFFFFF";
     ctx.fill();
     ctx.closePath();
 }
@@ -136,7 +136,7 @@ function drawGameOver() {
 function drawWin() {
     ctx.font = "64px Arial";
     ctx.fillStyle = "#FFFFFF";
-    ctx.fillText("YOU WIN!", 300, 300);
+    ctx.fillText("YOU WIN!", 280, 300);
 }
 
 function draw() {
@@ -168,8 +168,8 @@ function draw() {
             } else {
                 x = canvas.width / 2;
                 y = canvas.height - 30;
-                dx = 2;
-                dy = -2;
+                dx = 3;
+                dy = -3;
                 paddleX = (canvas.width - paddleWidth) / 2;
             }
         }
