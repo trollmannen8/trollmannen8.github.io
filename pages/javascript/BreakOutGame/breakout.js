@@ -159,12 +159,10 @@ function draw() {
             dy = -dy;
         } else {
             lives--;
-
             if (!lives) {
                 game = false;
                 drawGameOver();
                 setTimeout(function() {document.location.reload()}, 3000);
-                
             } else {
                 x = canvas.width / 2;
                 y = canvas.height - 30;
