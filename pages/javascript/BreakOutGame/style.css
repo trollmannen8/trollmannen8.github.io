@@ -16,7 +16,7 @@ h1 {
 #content {
     margin: 50px auto;
     width: 1000px;
-    background-color: darkcyan;
+    background-color: tomato;
     padding: 50px;
     border-radius: 5px;
 }
@@ -29,12 +29,29 @@ canvas {
 
 #controls {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#left, #middle, #right {
+    width: 300px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-span, ul {
+#start {
+    font-size: 2em;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+label, span, ul {
     padding: 5px;
+    font-size: 1.5em;
 }
 
 
