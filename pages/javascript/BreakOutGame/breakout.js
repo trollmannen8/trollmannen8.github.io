@@ -21,6 +21,7 @@ var bricks = [];
 var score = 0;
 var lives = 3;
 var ballColor = ["#FFA500", "#FFFF00","#008000"];
+var brickColor = ["#FF0000", "#FFA500", "#FFFF00", "#008000", "#0000FF"];
 var id = null;
 var game = true;
 for (var c = 0; c < brickColumnCount; c++) {
@@ -118,7 +119,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = "#FF0000";
+                ctx.fillStyle = brickColor[r];
                 ctx.fill();
                 ctx.closePath();
             }
