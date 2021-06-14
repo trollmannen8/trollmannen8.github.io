@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Breakout Game</title>
+</head>
+<body>
+
+    
+    <div id="content">
+        
+        <h1>Breakout Game</h1>
+
+        <canvas id="myCanvas" width="850" height="480"></canvas>
+
+        <div id="controls">
+
+            <label for="difficulty">Difficulty:</label>
+
+            <select name="" id="difficulty">
+                <option value="3">Easy, you have 3 lives</option>
+                <option value="2">Medium, you have 2 lives</option>
+                <option value="1">Hard, you have 1 life</option>
+            </select>
+
+            <button id="set">SET</button>
+
+            <button id="start">START</button>
+
+            <span>Controls:</span>
+
+            <ul>
+                <li>&larr;: left</li>
+                <li>&rarr;: right</li>
+            </ul>
+
+        </div>
+        
+    </div>
+
+    <script src="breakout.js"></script>
+
+</body>
+</html>
