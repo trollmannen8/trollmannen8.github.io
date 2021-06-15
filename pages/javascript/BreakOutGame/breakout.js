@@ -31,14 +31,16 @@ for (var c = 0; c < brickColumnCount; c++) {
     }
 }
 
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
-document.addEventListener("keyup", function(event) {
-    if (event.code === "Space") {
+function keyHit(e) {
+    if (e.code === "KeyS") {
         lives = document.getElementById("difficulty").value;
         draw();
-    }
-})
+    } 
+}
+
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("keyup", keyHit);
 
 function keyDownHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
@@ -144,6 +146,8 @@ function draw() {
     drawScore();
     drawLives();
     collisionDetection();
+
+    document.removeEventListener("keyup", keyHit);
 
     if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
         dx = -dx;
