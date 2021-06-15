@@ -39,10 +39,6 @@ document.addEventListener("keyup", function(event) {
         draw();
     }
 })
-/* document.getElementById("start").addEventListener("click", function start() {
-    lives = document.getElementById("difficulty").value;
-    draw();
-}); */
 
 function keyDownHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
