@@ -38,6 +38,9 @@ function keyHit(e) {
     } 
 }
 
+document.getElementById("set").addEventListener("click", function() {
+    lives = document.getElementById("difficulty").value;
+});
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 document.addEventListener("keyup", keyHit);

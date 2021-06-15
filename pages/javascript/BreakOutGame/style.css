@@ -58,7 +58,7 @@ label, span, ul {
 
 
 
-select {
+select, button {
     padding: 2px 10px;
     font-size: 1em;
     margin-bottom: 5px;
