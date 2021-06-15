@@ -64,6 +64,8 @@ select, button {
     margin-bottom: 5px;
     border: none;
     outline: none;
+    background-color: blue;
+    color: white;
 }
 
 button:active {
