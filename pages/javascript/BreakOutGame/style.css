@@ -44,7 +44,7 @@ canvas {
 }
 
 #start {
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: red;
     color: white;
     padding: 10px;
@@ -58,7 +58,7 @@ label, span, ul {
 
 
 
-select, button {
+select {
     padding: 2px 10px;
     font-size: 1em;
     margin-bottom: 5px;

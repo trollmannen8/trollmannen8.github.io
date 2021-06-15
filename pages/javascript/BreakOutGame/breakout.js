@@ -32,7 +32,7 @@ for (var c = 0; c < brickColumnCount; c++) {
 }
 
 function keyHit(e) {
-    if (e.code === "KeyS") {
+    if (e.code === "Enter") {
         lives = document.getElementById("difficulty").value;
         draw();
     } 
