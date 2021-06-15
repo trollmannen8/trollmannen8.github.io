@@ -31,17 +31,18 @@ for (var c = 0; c < brickColumnCount; c++) {
     }
 }
 
-document.getElementById("set").addEventListener("click", function() {
-    lives = document.getElementById("difficulty").value;
-})
-
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
-//document.addEventListener("mousemove", mouseMoveHandler, false);
-document.getElementById("start").addEventListener("click", function start() {
+document.addEventListener("keyup", function(event) {
+    if (event.code === "Space") {
+        lives = document.getElementById("difficulty").value;
+        draw();
+    }
+})
+/* document.getElementById("start").addEventListener("click", function start() {
     lives = document.getElementById("difficulty").value;
     draw();
-});
+}); */
 
 function keyDownHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
@@ -73,7 +74,7 @@ function collisionDetection() {
                     if (score == brickRowCount * brickColumnCount) {
                         game = false;
                         drawWin();
-                        setTimeout(function() {document.location.reload()}, 3000);
+                        setTimeout(function() {document.location.reload()}, 1000);
                     }
                 }
             }
@@ -162,7 +163,7 @@ function draw() {
             if (!lives) {
                 game = false;
                 drawGameOver();
-                setTimeout(function() {document.location.reload()}, 3000);
+                setTimeout(function() {document.location.reload()}, 1000);
             } else {
                 x = canvas.width / 2;
                 y = canvas.height - 30;
