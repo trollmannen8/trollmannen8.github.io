@@ -27,7 +27,7 @@ var game = true;
 for (var c = 0; c < brickColumnCount; c++) {
     bricks[c] = [];
     for (var r = 0; r < brickRowCount; r++) {
-        bricks[c][r] = { X: 0, y: 0, status: 1 };
+        bricks[c][r] = { X: 0, y: 0, status: 1, color: brickColor[Math.floor(Math.random() * 5)] };
     }
 }
 
@@ -116,7 +116,7 @@ function drawBricks() {
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = brickColor[r];
+                ctx.fillStyle = bricks[c][r].color;
                 ctx.fill();
                 ctx.closePath();
             }
