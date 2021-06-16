@@ -103,7 +103,6 @@ button {
     background-color: rgba(240, 240, 240, 0.7);
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(40, 40, 40, 0.7);
-    backdrop-filter: blur(3px);
 }
 
 .ajax-top {
