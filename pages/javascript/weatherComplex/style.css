@@ -120,6 +120,11 @@ button {
     flex-direction: column;
 }
 
+.city-icon {
+    width: 100px;
+    height: 100px;
+}
+
 .city-text {
     display: flex;
     flex-direction: column;
