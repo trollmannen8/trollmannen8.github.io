@@ -198,3 +198,12 @@ function draw() {
         cancelAnimationFrame(id);
     }
 }
+
+window.onload = function() {
+    var selItem = sessionStorage.getItem("SelItem");  
+    $('#difficulty').val(selItem);
+    }
+    $('#difficulty').change(function() { 
+        var selVal = $(this).val();
+        sessionStorage.setItem("SelItem", selVal);
+    });
