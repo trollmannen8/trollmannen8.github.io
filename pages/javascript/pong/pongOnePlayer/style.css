@@ -37,6 +37,10 @@ canvas {
     justify-content: center;
 }
 
+#controls, #form {
+    width: 150px;
+}
+
 select, button {
     outline: none;
     border: none;
