@@ -201,7 +201,7 @@ function spaceHit(event) {
 }
 
 window.onload = function() {
-    var selItem = sessionStorage.getItem("selItem");
+    var selItem = sessionStorage.getItem("selItem") || 0.06;
     $('#aiLevel').val(selItem);
     }
     $('#aiLevel').change(function() {

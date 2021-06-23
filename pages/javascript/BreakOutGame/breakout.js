@@ -200,7 +200,7 @@ function draw() {
 }
 
 window.onload = function() {
-    var selItem = sessionStorage.getItem("SelItem");  
+    var selItem = sessionStorage.getItem("SelItem") || 3;  
     $('#difficulty').val(selItem);
     }
     $('#difficulty').change(function() { 
