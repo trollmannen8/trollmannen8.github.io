@@ -136,6 +136,8 @@ form.addEventListener("submit", e => {
           <div class="city-text">
             <span class="city-temp-daily"><span class="legend">Nappal: </span>${Math.round(weather.daily[j].temp.day)}˚C, ${weather.daily[j].weather[0]["description"]}</span>
             <span class="city-temp-daily"><span class="legend">Éjjel: </span>${Math.round(weather.daily[j].temp.night)}˚C</span>
+            <span class="city-temp-daily"><span class="legend">Maximum: </span>${Math.round(weather.daily[j].temp.max)}˚C</span>
+            <span class="city-temp-daily"><span class="legend">Minimum: </span>${Math.round(weather.daily[j].temp.min)}˚C</span>
           </div>
         </div>
       </div>
