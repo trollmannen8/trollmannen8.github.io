@@ -1,5 +1,5 @@
 const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d", { alpha: false });
 const netWidth = 4;
 const netHeight = canvas.height;
 const paddleWidth = 10;
