@@ -196,7 +196,7 @@ function spaceHit(event) {
     if (event.keyCode === 32) {
         window.removeEventListener("keyup", spaceHit);
         document.getElementById("start").innerHTML = "";
-        id = setInterval(gameLoop, 1000 / 60);
+        id = setInterval(gameLoop, 16);
     }
 }
 
