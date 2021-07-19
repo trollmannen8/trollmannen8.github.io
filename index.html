@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Takács Dániel - Webfejlesztő</title>
 </head>
 <body data-spy="scroll" data-target="#navbar-id">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow" id="navbar-id">
-      <a class="navbar-brand" href="#welcome">Kezdőlap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Üdvözlöm!</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">Rólam</a>
           </li>
@@ -33,10 +38,9 @@
 
     <div class="container-fluid min-vh-100 d-flex align-items-center" id="welcome">
       <div class="container shadow mb-5 rounded" id="welcome-content">
-        <h1>Üdvözlöm az oldalamon!</h1>
-        <p>Takács Dániel vagyok.</p>
-        <p>Webfejlesztéssel foglalkozom, egyelőre frontend vonalon, de hamarosan megkezdem a backendes tanulmányaimat.</p>
-        <a href="#about" class="btn btn-primary" id="welcome-link">Tudjon meg többet!</a>
+        <h1><span class="closing">&lt;</span><span class="tag">h1</span><span class="closing">&gt;</span>Üdvözlöm az oldalamon!<span class="closing">&lt;/</span><span class="tag">h1</span><span class="closing">&gt;</span></h1>
+        <p><span class="closing">&lt;</span><span class="tag">p</span><span class="closing">&gt;</span>Takács Dániel vagyok. Webfejlesztéssel foglalkozom, egyelőre frontendes vonalon, de hamarosan megkezdem a backendes tanulmányaimat.<span class="closing">&lt;/</span><span class="tag">p</span><span class="closing">&gt;</span></p>
+        <p><span class="closing">&lt;</span><span class="tag">button</span><span class="closing">&gt;</span><a href="#about" class="btn btn-dark" id="welcome-link">Tudjon meg többet!</a><span class="closing">&lt;/</span><span class="tag">button</span><span class="closing">&gt;</span></p>
       </div>
     </div>
 
@@ -47,11 +51,11 @@
           
           <div class="col-xl-7 col-lg-7 pr-lg-5 text-justify" id="about-content">
             <h2 class="pb-5">Rólam</h2>
-            <p>Nagyon sokáig csak hobbi szinten foglalkoztam informatikával, aztán 2020-ban elvégeztem egy informatikai rendszerüzemeltető tanfolyamot. A tanfolyam része volt egy néhány alkalmas webfejlesztő gyorstalpaló, itt szerettem bele a webprogramozásba. 2021 januárjában be is iratkoztam egy frontend fejlesztő tanfolyamra, amelyet sikeresen el is végeztem. Jelenleg JavaScript tanfolyamra járok, utána a PHP következik. Hogy tudásom sokrétűbb legyen, online is tanulok, a freeCodeCamp nevű oldalon a Front End Development Libraries modulnál járok. Mellette csinálok olyan feladatokat is, amelyeknél valós projekteket kell megvalósítani.
-              Mivel elég erős a motivációm, szeretnék minél több dolgot elsajátítani, és minél jobbá válni a szakmában.
+            <p class="lightblue">Nagyon sokáig csak hobbi szinten foglalkoztam informatikával, aztán 2020-ban elvégeztem egy informatikai rendszerüzemeltető tanfolyamot. A tanfolyam része volt egy néhány alkalmas webfejlesztő gyorstalpaló, itt szerettem bele a webprogramozásba. 2021 januárjában be is iratkoztam egy frontend fejlesztő tanfolyamra, amelyet sikeresen el is végeztem. Jelenleg JavaScript tanfolyamra járok, utána a PHP következik. Hogy tudásom sokrétűbb legyen, online is tanulok, legtöbbet a freeCodeCamp és a Codewars nevű oldalakon. Mellette csinálok olyan feladatokat is, amelyeknél valós projekteket kell megvalósítani.
+            Mivel elég erős a motivációm, szeretnék minél több dolgot elsajátítani, és minél jobbá válni a szakmában.
             </p>
-            <p>Iskoláim:</p>
-            <ul>
+            <p class="brown">Iskoláim:</p>
+            <ul class="blue">
               <li>2020. január - 2020. december: Informatikai rendszerüzemeltető, Soter-Line Oktatási Központ</li>
               <li>2021. január - 2021. május: Frontend fejlesztő, Prooktatás</li>
               <li>2021. április: Responsive Web Design, freeCodeCamp</li>
@@ -59,9 +63,9 @@
             </ul>
           </div>
           <div class="col-xl-5 col-lg-5 pl-lg-5 mb-5">
-            <img class="img-fluid" src="assets/img/about.webp" alt="">
+            <img class="img-fluid shadow-lg" src="assets/img/about.webp" alt="">
             <h4 class="pt-5 pb-2">Codewars jelvényem:</h4>
-            <img class="img-fluid" src="https://www.codewars.com/users/trollmannen8/badges/large" alt="">
+            <img class="img-fluid shadow-lg" src="https://www.codewars.com/users/trollmannen8/badges/large" alt="">
           </div>
         </div>
       </div>
@@ -69,72 +73,124 @@
 
     <div class="container-fluid min-vh-100" id="projects">
 
-      <h2 class="text-center p-3">Munkáim</h2>
+      <h2 class="text-center text-white p-3">Munkáim</h2>
 
       <div class="container">
-        
             <div class="row p-5">
-               <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
-                  <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+          
+              <a href="https://trollmannen8.github.io/pages/homelab/" class="project-link col-xl-6 col-md-12 col" target="_blank">
+                <div class="d-flex justify-content-center">
+                  <div class="card bg-dark text-white shadow p-3 mb-5 bg-dark rounded" style="width: 40rem;">
                     <img src="assets/img/project06.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">HomeLab</h5>
-                      <p class="card-text">Egy képzeletbeli projekt weboldala.</p>
-                      <a href="https://trollmannen8.github.io/pages/homelab/" class="btn btn-primary" target="_blank">Megnézem</a>
+                      <p class="text-center default">Egy képzeletbeli projekt weboldala</p>
+                      <p class="text-center hover">HomeLab</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
-                  <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+              </a>
+              
+              <a href="https://trollmannen8.github.io/pages/photo/" class="project-link col-xl-6 col-md-12 col" target="_blank">
+                <div class="d-flex justify-content-center">
+                  <div class="card bg-dark text-white shadow p-3 mb-5 bg-dark rounded" style="width: 40rem;">
                     <img src="assets/img/project04.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Fotós portfólió</h5>
-                      <p class="card-text">Ez a saját fotós portfólióm.</p>
-                      <a href="https://trollmannen8.github.io/pages/photo/" class="btn btn-primary" target="_blank">Megnézem</a>
+                      <p class="text-center default">A saját fotós portfólióm</p>
+                      <p class="text-center hover">Takács Dániel - Portfólió</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
-                  <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+              </a>
+
+              <a href="https://trollmannen8.github.io/pages/breakoutgame/" class="project-link col-xl-6 col-md-12 col" target="_blank">
+                <div class="d-flex justify-content-center">
+                  <div class="card bg-dark text-white shadow p-3 mb-5 bg-dark rounded" style="width: 40rem;">
+                    <img src="assets/img/project05.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="text-center default">Klasszikus Breakout játék</p>
+                      <p class="text-center hover">Brakeout</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://trollmannen8.github.io/pages/weathercomplex/" class="project-link col-xl-6 col-md-12 col" target="_blank">
+                <div class="d-flex justify-content-center">
+                  <div class="card bg-dark text-white shadow p-3 mb-5 bg-dark rounded" style="width: 40rem;">
+                    <img src="assets/img/project07.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="text-center default">Időjárás előrejelző JavaScript alkalmazás</p>
+                      <p class="text-center hover">Időjárás</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="https://trollmannen8.github.io/pages/roman/" class="project-link col-xl-6 col-md-12 col" target="_blank">
+                <div class="d-flex justify-content-center">
+                  <div class="card bg-dark text-white shadow p-3 mb-5 bg-dark rounded" style="width: 40rem;">
                     <img src="assets/img/project03.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Arab-római szám átváltó</h5>
-                      <p class="card-text">Arab számokat római számokra vált át. A szabályos jelölést használja.</p>
-                      <a href="https://trollmannen8.github.io/pages/roman/" class="btn btn-primary" target="_blank">Megnézem</a>
+                      <p class="text-center default">Római szám átváltó</p>
+                      <p class="text-center hover">Roman Numeral Converter</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-md-6 col d-flex justify-content-center">
-                  <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <img src="assets/img/project02.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">JavaScript projektek</h5>
-                      <p class="card-text">Ide gyűjtöm a JavaScript projekjeimet.</p>
-                      <a href="https://trollmannen8.github.io/pages/javascript/" class="btn btn-primary" target="_blank">Megnézem</a>
-                    </div>
-                  </div>
-                </div>
+              </a>
               
             </div>
       </div>
     </div>
 
-      <div id="contact">
-        <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center" id="effect">
+    <div class="container-fluid d-flex flex-column min-vh-100" id="contact">
 
-          <div class="container d-flex flex-column justify-content-center align-items-center shadow m-5 rounded" id="contact-content">
-            <h2>Elérhetőségek:</h2>
-            <a href="https://github.com/trollmannen8" target="_blank"><i class="fa fa-github"></i> Github</a>
-            <a href="https://codepen.io/trollmannen8" target="_blank"><i class="fa fa-codepen"></i> CodePen</a>
-            <a href="https://twitter.com/trollmannen8" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
-            <a href="https://www.facebook.com/daniel.1349/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+        <h2 class="text-white text-center">Elérhetőségek</h2>
+
+        <p class="text-center pt-5 pb-5" id="contact-text">Ezek az internetes fiókjaim, ha bármi kérdése van, el tud érni Facebook Messengeren.</p>
+
+          <div class="container pt-5 pb-5" id="contact-content">
+
+
+            <div class="row">
+
+              <div class="col-xl-3 col-md-12 pb-lg-5">
+                <i class="fa fa-facebook w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://www.facebook.com/daniel.1349/" target="_blank"><span class="link-closing">&lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>Facebook<span class="link-closing">/&lt;</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+              
+              <div class="col-xl-3 col-md-12 pb-lg-5">
+                <i class="fa fa-github w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://github.com/trollmannen8" target="_blank"><span class="link-closing"> &lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>Github<span class="link-closing">&lt;/</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+              
+              <div class="col-xl-3 col-md-12 pb-lg-5">
+                <i class="fa fa-twitter w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://twitter.com/trollmannen8" target="_blank"><span class="link-closing"> &lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>Twitter<span class="link-closing">&lt;/</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+              
+              <div class="col-xl-3 col-md-12 pb-lg-5">
+                <i class="fa fa-free-code-camp w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://www.freecodecamp.org/trollmannen8" target="_blank"><span class="link-closing">&lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>freeCodeCamp<span class="link-closing">/&lt;</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+
+              <div class="col-xl-3 col-md-12 pb-lg-5">
+                <i class="fa fa-laptop w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://www.codewars.com/users/trollmannen8" target="_blank"><span class="link-closing">&lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>Codewars<span class="link-closing">/&lt;</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+
+              <div class="col-xl-3 col-md-12 pb-5-lg">
+                <i class="fa fa-instagram w-100 text-center"></i>
+                <p class ="w-100 text-center"><a href="https://www.instagram.com/trollmannen8/" target="_blank"><span class="link-closing">&lt;</span><span class="link-tag">a</span><span></span><span class="link-closing">&gt;</span>Instagram<span class="link-closing">/&lt;</span><span class="link-tag">a</span><span class="link-closing">&gt;</span></a></p>
+              </div>
+
+            </div>
+
           </div>
-        </div>
-      </div>
+    </div>
 
-      <footer class="container-fluid d-flex justify-content-center align-items-center pt-2">
-        <p>&copy; 2021 Takács Dániel</p>
-      </footer>
+    <footer>
+      <p>&copy 2010 Takács Dániel</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

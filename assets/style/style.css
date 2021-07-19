@@ -2,12 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Droid Sans Mono';
+    src: url("../fonts/DroidSansMono.ttf");
+}
+
 body {
     position: relative;
+    font-family: 'Noto Sans' sans-serif !important;
 }
 
 .navbar {
-    background-color: #ED6A5A !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    font-weight: 500;
 }
 
 .nav-link {
@@ -22,24 +29,29 @@ body {
 }
 
 #welcome-content {
+    font-family: 'Droid Sans Mono';
     padding: 100px;
     border-radius: 5px;
-    background-color: rgba(240, 240, 240, 0.7);
+    background-color: rgb(30, 30, 30);
 }
 
 h1 {
-    color: #ED6A5A;
-    font-size: 4em;
+    color: white;
+    font-size: 3em;
+}
+
+.closing {
+    color: rgb(127, 127, 127);
+}
+
+.tag {
+    color: rgb(86, 156, 214);
 }
 
 #welcome-content p {
     font-size: 1.5em;
-    margin: 0 auto;
-    color: darkslategray;
-}
-
-#welcome-link {
-    margin-top: 10px;
+    margin: 20px auto;
+    color: white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -56,7 +68,8 @@ h1 {
 
 
 #about {
-    background-color: #F4F1BB;
+    background-color: rgb(30, 30, 30);
+    color: white;
 }
 
 #about-content {
@@ -65,6 +78,18 @@ h1 {
 
 h2 {
     font-size: 3em;
+}
+
+.lightblue {
+    color: rgb(156, 220, 254);
+}
+
+.brown {
+    color: rgb(206, 145, 120);
+}
+
+.blue {
+    color: rgb(86, 156, 214);
 }
 
 @media only screen and (max-width: 800px) {
@@ -77,63 +102,97 @@ h2 {
 }
 
 #projects {
-    background-color: #E6EBE0;
+    background-color: rgb(37, 37, 38);
     padding-top: 100px !important;
 }
 
-.btn-primary {
-    background-color: #ED6A5A !important;
-    border: #F4F1BB !important;
+.project-link {
+    color: white;
 }
 
-.btn:active,.btn:focus {
-    box-shadow: none !important;
+.project-link .hover {
+    display: none;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    filter: brightness(110%);
+}
+
+.default, .hover {
+    font-size: 1.2em;
+    margin-bottom: -15px;
+}
+
+.project-link:hover .default {
+    display: none;
+}
+
+.project-link:hover .hover {
+    display: block;
 }
 
 #contact {
+    padding-top: 100px;
     min-width: 100% !important;
-    background-image: url("../img/contact.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: auto;
+    background-color: rgb(30, 30, 30);
 }
 
-#effect {
-    background-color: rgba(240, 240, 240, 0.7);
-    min-width: 100% !important;
+#contact-text {
+    font-size: 1.5em;
+    padding-bottom: 70px;
+    color: rgb(156, 220, 254);
 }
 
 #contact-content {
-    background-color: rgba(240, 240, 240, 0.7);
-    padding: 100px;
-    border-radius: 5px;
-}
-
-#contact h2 {
-    color: #ED6A5A;
+    font-family: 'Droid Sans Mono';
 }
 
 #contact a {
     font-size: 1.5em;
-    margin: 5px;
-    color: darkslategray;
+    color: white;
+}
+
+#contact a .link-closing, #contact a .link-tag {
+    color: rgb(30, 30, 30);
+    transition: 0.5s color ease-out;
+}
+
+#contact a:hover .link-closing {
+    color: rgb(127, 127, 127);
+}
+
+#contact a:hover .link-tag {
+    color: rgb(86, 156, 214);
 }
 
 #contact a:hover {
-    color: gray;
-    text-decoration: none;
+    color: rgb(206, 145, 120);
+    text-decoration: underline;
+    text-transform: lowercase;
 }
 
-footer {
-    width: 100%;
-    min-height: 50px;
-    background-color: darkslategray;
-    color: white;
+.fa {
+    color: rgb(86, 156, 214);
+    font-size: 4em;
 }
 
 @media only screen and (max-width: 800px) {
     #contact a {
         font-size: 1em;
     }
+}
+
+footer {
+    background-color: rgb(0, 122, 204);
+    color: white;
+    text-align: right;
+    font-size: 14px;
+    height: 22px;
+}
+
+footer>p {
+    padding-right: 10px;
 }
