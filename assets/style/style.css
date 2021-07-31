@@ -125,6 +125,7 @@ h2 {
 .project-link:hover {
     text-decoration: none;
     filter: brightness(110%);
+    transition: 0.5s;
 }
 
 .default, .hover {
