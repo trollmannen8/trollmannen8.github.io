@@ -114,6 +114,7 @@ h2 {
 
 .project-link {
     color: white;
+    transition: 0.5s;
 }
 
 .project-link .hover {
@@ -124,7 +125,7 @@ h2 {
 
 .project-link:hover {
     text-decoration: none;
-    filter: brightness(110%);
+    filter: drop-shadow(10px 10px 15px rgb(22, 22, 22)) brightness(110%);
     transition: 0.5s;
 }
 
