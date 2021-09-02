@@ -82,6 +82,10 @@ h1 {
     font-size: 1.2em;
 }
 
+#about-content a:hover {
+    color: rgb(156, 220, 254);
+}
+
 h2 {
     font-size: 3em;
 }
