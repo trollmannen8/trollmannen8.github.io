@@ -121,10 +121,12 @@ h2 {
     transition: 0.5s;
 }
 
+.project-link .default {
+    font-weight: 600;
+}
+
 .project-link .hover {
     display: none;
-    text-decoration: underline;
-    font-weight: 600;
 }
 
 .project-link:hover {
