@@ -97,8 +97,12 @@ header>h2 {
 }
 
 #profile {
-    width: 40vw;
-    height: auto;
+    width: 48vh;
+    height: 48vh;
+    background-image: url("../img/profile.webp");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
 }
