@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #E9C46A;
+    background-color: white;
 }
 
 #navbar {
@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #e76f51;
+    background-color: black;
 }
 
 #navbar>ul {
@@ -78,7 +78,7 @@ header>h2 {
 }
 
 #welcome-text>button {
-    background-color: #e76f51;
+    background-color: black;
     font-size: 1em;
     border: none;
     border-radius: 5px;
@@ -103,7 +103,7 @@ header>h2 {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    border: 5px solid #e76f51;
+    border: 5px solid black;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
 }
@@ -143,14 +143,14 @@ header>h2 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(233, 196, 106, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(3px);
 }
 .modal-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(245, 222, 179, 0);
+    background-color: rgba(255, 255, 255, 0);
     padding: 0;
     width: 100%;
     height: 100%;
@@ -217,7 +217,7 @@ header>h2 {
 }
 
 #contact>p>a {
-    background-color: #e76f51;
+    background-color: black;
     text-decoration: none;
     font-size: 1em;
     color: white;
