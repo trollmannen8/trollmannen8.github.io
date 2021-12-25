@@ -81,9 +81,11 @@ header>h2 {
     text-align: justify;
 }
 
-#welcome-text>button {
+#welcome-text>a {
     background-color: rgb(48, 48, 48);
     font-size: 1em;
+    color: white;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     outline: none;
@@ -91,13 +93,8 @@ header>h2 {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-#welcome-text>button>a {
-    color: white;
-    text-decoration: none;
-}
-
-#welcome-text>button>a:hover {
-    text-decoration: underline;
+#welcome-text>a:hover {
+    background-color: rgb(64, 64, 64);
 }
 
 #profile {
@@ -230,7 +227,7 @@ header>h2 {
 }
 
 #contact>p>a:hover {
-    text-decoration: underline;
+    background-color: rgb(64, 64, 64);
 }
 
 .fa {
