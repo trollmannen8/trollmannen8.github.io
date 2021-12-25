@@ -10,23 +10,27 @@ body {
 }
 
 #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: fixed;
     z-index: 8;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    height: 50px;
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 #navbar>ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 #navbar>ul>li>a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 2em;
     color: white;
     text-decoration: none;
@@ -47,10 +51,10 @@ header {
     padding-bottom: 50px;
 }
 header>h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 header>h2 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #welcome {
@@ -68,7 +72,7 @@ header>h2 {
 #welcome-text {
     width: 600px;
     padding-right: 50px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-bottom: 50px;
 }
 
@@ -78,7 +82,7 @@ header>h2 {
 }
 
 #welcome-text>button {
-    background-color: black;
+    background-color: rgb(48, 48, 48);
     font-size: 1em;
     border: none;
     border-radius: 5px;
@@ -216,7 +220,7 @@ header>h2 {
 }
 
 #contact>p>a {
-    background-color: black;
+    background-color: rgb(48, 48, 48);
     text-decoration: none;
     font-size: 1em;
     color: white;
@@ -231,24 +235,6 @@ header>h2 {
 
 .fa {
     padding-right: 5px;
-}
-
-footer,#welcome-footer,#contact-footer {
-    background-color: darkslategray;
-    color: white;
-    width: 100%;
-}
-
-#welcome-footer,#contact-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-footer>p {
-    line-height: 2em;
-    text-align: right;
-    padding-right: 20px;
 }
 
 @media only screen and (max-width: 800px) {
