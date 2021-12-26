@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,49 +9,131 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Takács Dániel - Portfólió</title>
 </head>
-<body>
-    
-    <nav id="navbar" class="topnav">
-        <ul>
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a href="gallery/index.html">Galéria</a></li>
-            <li><a href="contact/index.html">Elérhetőségek</a></li>
-            <li><a href="javascript:void(0);" class="hamburger" onclick="menuFunction()"><i id="responsiveButton" class="fa fa-bars"></i></a></li>
-        </ul>
-    </nav>
-    
-    <header>
-        <h1>Portfólió</h1>
-    </header>
 
-    <div id="welcome">
-        <div id="welcome-text">
-            <h2>Üdvözöllek!</h2>
-            <p>Takács Dániel vagyok. Világ életemben érdekelt a fotózás, de első komolyabb fényképezőgépemet 2015-ben vásároltam meg, ekkortól mélyedtem el benne igazán. Hamar kiderült, hogy a portréfotózásban lelem legnagyobb örömemet, így erre kezdtem el szakosodni. A természetes fényt kedvelem, fényformálókat nem használok. A fotózásokat szabadtérre szoktam szervezni, aminek megvan az a hátránya, hogy közbeszólhat az időjárás, viszont sokkal változatosabb helyszíneket találok, mint egy stúdióban, és ha minden jól alakul, gyönyörű fényeket is kapok.</p>
-            <p>Ha kíváncsi vagy a képeimre, itt megtekintheted őket:</p>
-            <a href="gallery/index.html">Galéria</a>
+<body>
+
+    <div class="container-fluid min-vh-100 position-relative" id="welcome">
+
+        <div class="position-absolute top-0 end-0 px-3">
+            <h1 class="main-title text-center">Takács Dániel</h1>
+            <h2 class="main-title text-center">Portfólió</h2>
         </div>
-        <div id="profile"></div>
+
+        <a href="#gallery" class="position-absolute bottom-0 start-0 px-3 navigation">&#8595; Galéria</a>
+
+        <a href="#about" class="position-absolute bottom-0 end-0 px-3 navigation">&#8595; Rólam</a>
+
     </div>
 
-    <script>
+    <div class="container-fluid min-vh-100 position-relative" id="gallery">
 
-        function menuFunction() {
-            var menu = document.getElementById("navbar");
-            var button = document.getElementById("responsiveButton");
-            if (menu.className === "topnav") {
-            menu.className += " responsive";
-            button.className = "fa fa-close";
-            } else {
-            menu.className = "topnav";
-            button.className = "fa fa-bars";
-            }
-        }
+        <div id="carouselControls" class="carousel slide pt-5" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/15.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Noémi">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/14.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="PurplePastelChalk">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/13.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Lili">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/12.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Zsuzsanna">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/11.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Luna">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/10.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Csilla">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/09.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Linda">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/08.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Bettina">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/07.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Emese">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/06.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Nikol">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/05.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Ágota">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/04.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Csilla">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/03.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Georgina">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/02.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Shayola Artwork">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/01.jpg" class="d-block mx-auto" style="width:auto; height: 90vh !important;" alt="Cerebro Kriszti">
+                </div>
+            </div>
+            <button class="carousel-control-prev my-auto" type="button" data-bs-target="#carouselControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next my-auto" type="button" data-bs-target="#carouselControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
+        <a href="#welcome" class="position-absolute bottom-0 start-0 px-3 navigation">&#8593; Főoldal</a>
+
+        <a href="#about" class="position-absolute bottom-0 end-0 px-3 navigation">&#8595; Rólam</a>
+
+    </div>
+
+    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center  position-relative" id="about">
+
+        <div class="container col-lg-4">
+            <h2 class="text-center mt-3 mb-3 text-light">Rólam</h2>
+            <p id="about-text" class="text-light">Takács Dániel vagyok. Hobbiból fényképezek, szeretek portrét fotózni. A természetes fényt kedvelem, fényformálókat nem
+                használok. A fotózásokat szabadtérre szoktam szervezni, aminek megvan az a hátránya, hogy közbeszólhat
+                az időjárás, viszont sokkal változatosabb helyszíneket találok, mint egy stúdióban, és ha minden jól
+                alakul, gyönyörű fényeket is kapok.</p>
+                <img src="assets/img/about.jpg" class="img-fluid mt-3" alt="Camera">
+            <h3 class="text-center pt-5 mt-3 mb-3 text-light">Elérhetőségeim</h3>
+            <div class="p-3 d-flex justify-content-evenly">
+                <a class="contact" href="https://www.facebook.com/daniel.1349" title="Facebook" target="_blank">
+                    <i class="fa fa-facebook-official"></i>
+                </a>
+                <a class="contact" href="https://www.instagram.com/trollmannen8" title="Instagram" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a class="contact" href="https://www.flickr.com/photos/135092434@N08/" title="Flickr" target="_blank">
+                    <i class="fa fa-flickr"></i>
+                </a>
+                <a class="contact" href="https://500px.com/p/trollmannen8" title="500px" target="_blank">
+                    <i class="fa fa-500px"></i>
+                </a>
+            </div>
+        </div>
+
+        <a href="#welcome" class="position-absolute bottom-0 start-0 px-3 navigation">&#8593; Főoldal</a>
+
+        <a href="#gallery" class="position-absolute bottom-0 end-0 px-3 navigation">&#8593; Galéria</a>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 
 </body>
+
 </html>
