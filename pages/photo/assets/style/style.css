@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 800px) {
     .carousel-inner {
-        height: 90vh !important;
+        height: 80vh !important;
     }
     .carousel-item>img {
         margin: auto auto;
