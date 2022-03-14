@@ -49,6 +49,10 @@
     color: rgb(240, 240, 240);
 }
 
+.mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
     .carousel-inner {
         height: 80vh !important;
@@ -57,5 +61,15 @@
         margin: auto auto;
         height: auto !important;
         width: 90vw !important;
+    }
+    .navigation {
+        display: none;
+    }
+    .mobile, .mobile:active, .mobile:hover {
+        display: block;
+        font-size: 2em;
+        text-shadow: 0 0 5px black;
+        color: white;
+        text-decoration: none;
     }
 }
