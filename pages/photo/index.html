@@ -5,137 +5,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <title>Takács Dániel - Portfólió</title>
+    <title>Portfólió</title>
 </head>
 
 <body>
 
-    <div class="container-fluid min-vh-100 position-relative" id="welcome">
 
-        <div class="position-absolute top-0 end-0 p-3">
-            <h1 class="main-title text-center">Takács Dániel</h1>
-            <h2 class="main-title text-center">Portfólió</h2>
-        </div>
-
-        <a href="#gallery" class="position-absolute bottom-0 start-0 p-3 navigation">&#8595; Galéria</a>
-
-        <a href="#about" class="position-absolute bottom-0 end-0 p-3 navigation">Rólam &#8595;</a>
-
-        <a href="#gallery" class="position-absolute bottom-0 pb-5 vw-100 text-center mobile">&#8595; Galéria</a>
-
-    </div>
-
-    <div class="container-fluid min-vh-100 position-relative" id="gallery">
-
-        <div id="carouselControls" class="carousel slide pt-5" data-bs-ride="carousel" data-bs-interval="false">
-            <div class="carousel-inner d-flex align-items-center">
-                <div class="carousel-item active">
-                    <img src="assets/img/16.jpg" class="d-block mx-auto" alt="Noémi">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/15.jpg" class="d-block mx-auto" alt="PurplePastelChalk">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/14.jpg" class="d-block mx-auto" alt="Lili">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/13.jpg" class="d-block mx-auto" alt="Zsuzsanna">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/12.jpg" class="d-block mx-auto" alt="Nikol">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/11.jpg" class="d-block mx-auto" alt="Luna">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/10.jpg" class="d-block mx-auto" alt="Csilla">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/09.jpg" class="d-block mx-auto" alt="Bettina">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/08.jpg" class="d-block mx-auto" alt="Emese">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/07.jpg" class="d-block mx-auto" alt="Nikol">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/06.jpg" class="d-block mx-auto" alt="Ágota">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/05.jpg" class="d-block mx-auto" alt="Csilla">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/04.jpg" class="d-block mx-auto" alt="Bettina">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/03.jpg" class="d-block mx-auto" alt="Georgina">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/02.jpg" class="d-block mx-auto" alt="Shayola Artwork">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/img/01.jpg" class="d-block mx-auto" alt="Cerebro Kriszti">
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="gallery-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Portfólió</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">Rólam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                </ul>
             </div>
-            <button class="carousel-control-prev my-auto" type="button" data-bs-target="#carouselControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next my-auto" type="button" data-bs-target="#carouselControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
+    </nav>
 
-        <a href="#about" class="position-absolute bottom-0 start-0 p-3 navigation">Rólam &#8595;</a>
-        
-        <a href="#welcome" class="position-absolute bottom-0 end-0 p-3 navigation">&#8593; Kezdőlap</a>
+    <div class="container-fluid p-5" id="gallery">
 
-        <a href="#about" class="position-absolute bottom-0 pb-5 vw-100 text-center mobile">&#8595; Rólam</a>
+        <h1 class="text-center text-light p-5">Takács Dániel - Portfólió</h1>
 
-    </div>
-
-    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center  position-relative" id="about">
-
-        <div class="container col-lg-4">
-            <h2 class="text-center mt-3 mb-3 text-light">Rólam</h2>
-            <p id="about-text" class="text-light">Takács Dániel vagyok. Hobbiból fényképezek, szeretek portrét fotózni. A természetes fényt kedvelem, fényformálókat nem
-                használok. A fotózásokat szabadtérre szoktam szervezni, aminek megvan az a hátránya, hogy közbeszólhat
-                az időjárás, viszont sokkal változatosabb helyszíneket találok, mint egy stúdióban, és ha minden jól
-                alakul, gyönyörű fényeket is kapok.</p>
-                <img src="assets/img/profile.webp" class="img-fluid mt-3" alt="Camera">
-            <h3 class="text-center pt-5 mt-3 mb-3 text-light">Elérhetőségeim</h3>
-            <div class="p-3 d-flex justify-content-evenly">
-                <a class="contact" href="https://www.facebook.com/daniel.1349" title="Facebook" target="_blank">
-                    <i class="fa fa-facebook-official"></i>
-                </a>
-                <a class="contact" href="https://www.instagram.com/trollmannen8" title="Instagram" target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a class="contact" href="https://www.flickr.com/photos/135092434@N08/" title="Flickr" target="_blank">
-                    <i class="fa fa-flickr"></i>
-                </a>
-                <a class="contact" href="https://500px.com/p/trollmannen8" title="500px" target="_blank">
-                    <i class="fa fa-500px"></i>
-                </a>
+        <div class="masonry pt-5">
+            <div class="brick">
+                <img src="assets/img/16.jpg" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/15.jpg" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/14.jpg" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/13.jpg" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/12.jpg" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/11.jpg" onclick="openModal();currentSlide(6)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/10.jpg" onclick="openModal();currentSlide(7)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/09.jpg" onclick="openModal();currentSlide(8)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/08.jpg" onclick="openModal();currentSlide(9)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/07.jpg" onclick="openModal();currentSlide(10)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/06.jpg" onclick="openModal();currentSlide(11)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/05.jpg" onclick="openModal();currentSlide(12)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/04.jpg" onclick="openModal();currentSlide(13)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/03.jpg" onclick="openModal();currentSlide(14)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/02.jpg" onclick="openModal();currentSlide(15)">
+            </div>
+            <div class="brick">
+                <img src="assets/img/01.jpg" onclick="openModal();currentSlide(16)">
             </div>
         </div>
 
-        <a href="#gallery" class="position-absolute bottom-0 start-0 p-3 navigation">Galéria &#8593;</a>
-        
-        <a href="#welcome" class="position-absolute bottom-0 end-0 p-3 navigation">&#8593; Kezdőlap</a>
+
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <img src="assets/img/16.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/15.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/14.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/13.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/12.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/11.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/10.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/09.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/08.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/07.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/06.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/05.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/04.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/03.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/02.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <div class="mySlides">
+                    <img src="assets/img/01.jpg" style="max-height: 95vh; max-width: 95vw;">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
 
     </div>
+
+
+
+
+
+
+    <script src="assets/script/modal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
