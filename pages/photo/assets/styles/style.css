@@ -85,7 +85,7 @@ html {
 
 .modal-content {
     animation-name: fadeIn;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 .close {
@@ -139,7 +139,7 @@ html {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     animation-name: fadeIn;
     animation-timing-function: ease-in;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 @keyframes fadeIn {
