@@ -36,7 +36,7 @@ html {
 }
 
 .masonry .brick img {
-    cursor: zoom-in;
+    cursor: pointer;
     border-radius: 5px;
     max-width: 100%;
     transition: all .5s ease-in-out;
