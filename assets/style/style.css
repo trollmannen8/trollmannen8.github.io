@@ -48,10 +48,29 @@ h1 {
 
 .closing {
     color: rgb(127, 127, 127);
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .tag {
     color: rgb(86, 156, 214);
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #welcome-content p {
